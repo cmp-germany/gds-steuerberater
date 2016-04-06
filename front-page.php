@@ -34,7 +34,7 @@
         <div class="col-md-10 col-md-offset-1 text-center">
           <blockquote>
             <q>Mit der GDS habe ich einen vertrauensvollen Partner an meiner Seite, der mich in Steuerthemen mit Herz und Kopf unterstützt.</q>
-            <footer>Ein Kunde der GDS<cite title="Source Title"><!--Source Title--></cite></footer>
+            <!--<footer>Ein Kunde der GDS<cite title="Source Title">Source Title</cite></footer>-->
           </blockquote>
         </div>
       </div>
