@@ -26,6 +26,36 @@ h2 {
 
 }
 
+.parallax-slide blockquote{
+  border: none;
+}
+
+.parallax-slide blockquote q{
+  font-style: italic;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.parallax-slide blockquote footer{
+  color: #333;
+}
+
+.parallax-slide blockquote q:before{
+  content: '„';
+}
+
+.parallax-slide blockquote q:after{
+  content: '“';
+}
+
+.parallax-slide p {
+  font-size: 16px;
+}
+
+.parallax-slide .row {
+  margin-bottom: 30px;
+}
+
 
 /* .title-slide */
 
@@ -60,18 +90,17 @@ h2 {
 }
 
 .content-slide h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .content-slide h2 {
   margin-top: 0;
-  margin-bottom: 30px;
   font-style: italic;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 40px;
 }
 
-.content-slide-intro {
+.content-slide p.content-slide-intro {
   font-size: 25px;
   font-style: italic;
   font-weight: 300;
@@ -97,7 +126,7 @@ h2 {
   border: none;
 }
 
-.quote-slide blockquote p{
+.quote-slide blockquote q{
   font-style: italic;
   font-weight: 200;
   font-size: 40px;
@@ -107,10 +136,35 @@ h2 {
   color: #333;
 }
 
-.quote-slide blockquote p:before{
+.quote-slide blockquote q:before{
   content: '„';
 }
 
-.quote-slide blockquote p:after{
+.quote-slide blockquote q:after{
   content: '“';
 }
+
+/* .teammember */
+
+.teammember {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+  padding-top: 80px;
+}
+
+.team-avatar {
+  height: 220px;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 220px;
+  margin-bottom: 50px;
+  background-color: #282828;
+  overflow: hidden;
+}
+
+.team-avatar img {
+  width: 100%;
+}
+
+/* .impressum-slide */
