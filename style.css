@@ -48,8 +48,9 @@ h2 {
   content: '“';
 }
 
-.parallax-slide p {
+.parallax-slide p, .parallax-slide li {
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .parallax-slide .row {
@@ -143,6 +144,67 @@ h2 {
 .quote-slide blockquote q:after{
   content: '“';
 }
+
+/* .panel */
+
+.parallax-slide .panel:first-child {
+  border-top: 1px solid #999999;
+}
+
+.parallax-slide .panel {
+  border: none;
+  border-bottom: 1px solid #999999;
+  border-radius: 0px;
+}
+
+.parallax-slide .panel-heading {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.parallax-slide .text-center .panel-heading {
+  justify-content: center;
+}
+
+.parallax-slide .panel-heading h4 {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.parallax-slide .panel-group .panel-heading+.panel-collapse>.list-group, .parallax-slide .panel-group .panel-heading+.panel-collapse>.panel-body {
+  border:none;
+}
+
+.parallax-slide .panel-collapse {
+  background-color: transparent;
+  border: none;
+}
+
+.parallax-slide .panel-heading a:hover {
+  text-decoration: none;
+}
+
+.parallax-slide .panel-heading a:focus {
+  text-decoration: none;
+}
+
+/* .team-list */
+
+.team-list {
+  list-style: upper-roman;
+  padding-left: 0px;
+}
+
+.team-list li {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+}
+
 
 /* .teammember */
 

@@ -275,14 +275,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <ul>
+      <div class="col-sm-7 col-sm-offset-4">
+        <ol class="team-list">
           <li>Immer den Dialog mit den Mandanten suchen</li>
           <li>Partnerschaftlich auf Augenhöhe kommunizieren</li>
           <li>Den Mandanten richtig zuhören und ihre Probleme verstehen</li>
           <li>Sehr individuell und persönlich auf die Mandanten eingehen</li>
           <li>Schlanke, kostenbewusste Lösungen für das Unternehmen entwickeln</li>
-        </ul>
+        </ol>
       </div>
     </div>
     <div class="teammember">
@@ -380,6 +380,11 @@
             </p>
           </a>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 text-center">
+        <h2>Impressum & Recht</h2>
       </div>
     </div>
     <div class="row">
