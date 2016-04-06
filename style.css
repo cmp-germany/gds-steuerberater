@@ -255,3 +255,44 @@ a:hover, a:focus, a:active, a:visited {
 }
 
 /* .impressum-slide */
+
+.impressum-slide {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+
+.impressum-adress p{
+  font-weight: 200;
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.impressum-maps {
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+
+.impressum-maps a {
+  color: #333;
+}
+
+.impressum-maps p span.glyphicon{
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.impressum-maps p {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.impressum-slide h2 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
