@@ -105,7 +105,7 @@
     <div class="row">
       <div class="col-md-6">
         <p>
-          Unser gemeinsames Ziel ist es, für unsere Mandanten umfassende Beratungskompetenz und persönliche Betreuung sicherzustellen. Ganz gleich ob Privatperson, Einzelunternehmer, Kapital- oder Personengesellschaft, individuelle Bedarfsstrukturen erfordern ein Höchstmaß an persönlicher Betreuung. Und betreuen heißt begleiten - wir begleiten Sie gerne allen Bereichen.
+          Unser gemeinsames Ziel ist es, für unsere Mandanten umfassende Beratungskompetenz und persönliche Betreuung sicherzustellen. Ganz gleich ob Privatperson, Einzelunternehmer, Kapital- oder Personengesellschaft, individuelle Bedarfsstrukturen erfordern ein Höchstmaß an persönlicher Betreuung. Und betreuen heißt begleiten - wir begleiten Sie gerne in allen Bereichen.
         </p>
         <p>
           <strong>Nur wenn wir Ihr Vertrauen genießen, können wir optimal gestalten.</strong>
