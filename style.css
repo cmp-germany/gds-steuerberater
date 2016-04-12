@@ -14,6 +14,55 @@ blockquote{
   border: none;
 }
 
+/*///////// Navbar Styling */
+
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid #ccc 1px;
+  background-color: #fff;
+  color: #000;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.navbar-brand {
+  font-size: 220%;
+}
+
+.navbar-brand small {
+  text-transform: uppercase;
+  font-size: 40%;
+}
+
+.navbar-toggle {
+  border-color: #000;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+.nav > li > a:focus, .nav > li > a:hover, .nav > li.active > a {
+  background-color: inherit;
+  color: #000;
+  border-bottom: solid #000 1px;
+  margin-bottom: -1px;
+}
+
+.nav li a {
+  color: #999;
+}
+
+/*.nav li a span.glyphicon {
+  font-size: 60%;
+}*/
+
 
 
 /*///////// Typography */
@@ -26,13 +75,14 @@ h1 {
   font-weight: 900;
 }
 
-h2, .content-slide-intro, .panel-heading h4, .team-list li, .team-position {
+h2, .content-slide-intro, .panel-heading h4, .team-list li, .team-position, .nav li a {
   font-family: 'Arapey', serif;
   font-style: italic;
 }
 
-a:hover, a:focus, a:active, a:visited {
+a:hover, a:focus, a:active, a:visited, a {
   text-decoration: none;
+  color: inherit;
 }
 
 q{
@@ -100,6 +150,12 @@ h2 {
 blockquote q {
   font-size: 40px;
 }
+
+.nav li a {
+  font-size: 20px;
+}
+
+
 .panel-heading h4 {
   font-size: 23px;
 }
@@ -320,8 +376,8 @@ blockquote q {
 /* .impressum-slide */
 
 .impressum-slide {
-  margin-top: 180px;
-  margin-bottom: 180px;
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 
 

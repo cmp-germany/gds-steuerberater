@@ -1,4 +1,38 @@
 <?php get_header(); ?>
+
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href="#gds">GDS <small>Steuerberatung</small></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="navbar-left">
+        <!-- <img src="http://lorempixel.com/g/150/60/business" alt="" />
+        <img src="http://lorempixel.com/g/160/60/business" alt="" /> -->
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+        <li><a class="page-scroll" href="#start">Start</a></li>
+        <li><a class="page-scroll" href="#mandanten">Mandanten</a></li>
+        <li><a class="page-scroll" href="#leistungen">Leistungen</a></li>
+        <li><a class="page-scroll" href="#team">Team</a></li>
+        <li><a class="page-scroll" href="#impressum">Kontakt &amp; Impressum</a></li>
+        <li><a class="page-scroll" href="#kontaktformular"><span class="glyphicon glyphicon-envelope"></span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
 <section id="gds" class="title-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0007-2_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0.0" data-bleed="0">
   <div class="title-slide-center">
     <div class="container">
@@ -27,7 +61,7 @@
   </div>
 </section>
 
-<section id="mandanten" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5846_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
+<section class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5846_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -43,7 +77,7 @@
 </section>
 
 
-<section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">
+<section id="mandanten" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -71,7 +105,7 @@
   </div>
 </section>
 
-<section id="leistungen" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0011_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
+<section class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0011_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -89,7 +123,7 @@
 
 
 <!-- <section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10"> -->
-<section class="content-slide parallax-slide">
+<section id="leistungen" class="content-slide parallax-slide">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -245,7 +279,7 @@
 </section>
 
 
-<section id="team" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5866.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0" data-bleed="0">
+<section class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5866.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -261,7 +295,7 @@
 </section>
 
 <!--<section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">-->
-<section class="content-slide parallax-slide">
+<section id="team" class="content-slide parallax-slide">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -341,7 +375,7 @@
   </div>
 </section>
 
-<section id="impressum" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0047_crop.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0" data-bleed="0">
+<section class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0047_crop.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -358,7 +392,7 @@
 
 
 <!--<section id="start" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">-->
-<section id="start" class="impressum-slide parallax-slide">
+<section id="impressum" class="impressum-slide parallax-slide">
   <div class="container">
     <div class="impressum-adress">
       <div class="row">
