@@ -8,6 +8,14 @@ Version: 1.0
 Text Domain: gds-steuerberater
 */
 
+/*///////// General Resets */
+
+blockquote{
+  border: none;
+}
+
+
+
 /*///////// Typography */
 
 body {
@@ -18,7 +26,7 @@ h1 {
   font-weight: 900;
 }
 
-h2 {
+h2, .content-slide-intro, .panel-heading h4, .team-list li, .team-position {
   font-family: 'Arapey', serif;
   font-style: italic;
 }
@@ -41,38 +49,123 @@ q:after{
 }
 
 
+/*///////// Typography Sizes*/
+
+p, li {
+  font-size: 16px;
+}
+
+.team-list li {
+  font-size: 20px;
+}
+
+.team-name {
+  font-size: 22px;
+}
+
+.team-degree {
+  font-size: 20px;
+}
+
+.team-position {
+  font-size: 23px;
+}
+
+.impressum-adress p{
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.impressum-maps p {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.content-slide-intro {
+  font-size: 30px;
+}
+
+blockquote q {
+  font-size: 40px;
+}
+.panel-heading h4 {
+  font-size: 23px;
+}
+
+.title-slide h1 {
+  font-size: 80px;
+}
+
+.title-slide h1 small {
+  font-weight: 200;
+  letter-spacing: 4px;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .title-slide h1 {
+    font-size: 60px;
+  }
+
+  .title-slide h1 small {
+    font-size: 25px;
+  }
+
+  .impressum-adress p{
+    font-size: 27px;
+    line-height: 27px;
+  }
+
+  .impressum-maps p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .content-slide-intro {
+    font-size: 27px;
+  }
+
+  blockquote q {
+    font-size: 27px;
+  }
+
+  .panel-heading h4 {
+    font-size: 20px;
+  }
+
+}
+
+
 /*///////// parallax-window Slides */
 
 /* GENERAL: .parallax-slide */
 
-.parallax-slide {
-
-}
-
-.parallax-slide blockquote{
-  border: none;
-}
-
-.parallax-slide blockquote q{
-  font-family: 'Arapey', serif;
-  font-style: italic;
-  font-size: 40px;
-}
 
 .parallax-slide blockquote footer{
   color: #333;
 }
 
-.parallax-slide blockquote q:before{
-  content: '„';
-}
-
-.parallax-slide blockquote q:after{
-  content: '“';
-}
-
 .parallax-slide p, .parallax-slide li {
-  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -95,16 +188,6 @@ q:after{
   text-transform: uppercase;
 }
 
-.title-slide h1 {
-  font-size: 80px;
-}
-
-.title-slide h1 small {
-  font-weight: 200;
-  letter-spacing: 4px;
-  font-size: 40px;
-}
-
 /* .content-slide */
 
 .content-slide {
@@ -112,19 +195,8 @@ q:after{
   padding-bottom: 180px;
 }
 
-.content-slide h1 {
-  font-size: 50px;
-}
-
 .content-slide h2 {
   margin-top: 0;
-  font-size: 50px;
-}
-
-.content-slide p.content-slide-intro {
-  font-size: 30px;
-  font-family: 'Arapey', serif;
-  font-style: italic;
 }
 
 /* .quote-slide */
@@ -148,7 +220,6 @@ q:after{
 }
 
 .quote-slide blockquote q{
-  font-size: 40px;
   color: #000;
 }
 
@@ -182,9 +253,6 @@ q:after{
 
 .parallax-slide .panel-heading h4 {
   text-transform: uppercase;
-  font-family: 'Arapey', serif;
-  font-style: italic;
-  font-size: 23px;
 }
 
 .parallax-slide .panel-group .panel-heading+.panel-collapse>.list-group, .parallax-slide .panel-group .panel-heading+.panel-collapse>.panel-body {
@@ -216,12 +284,6 @@ q:after{
     padding-left: 50px;
   }
 }
-.team-list li {
-  font-size: 20px;
-  font-family: 'Arapey', serif;
-  font-style: italic;
-  font-weight: 300;
-}
 
 
 /* .teammember */
@@ -248,18 +310,6 @@ q:after{
 
 .team-name {
   text-transform: uppercase;
-  font-size: 22px;
-}
-
-.team-degree {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.team-position {
-  font-size: 23px;
-  font-family: 'Arapey', serif;
-  font-style: italic;
 }
 
 .team-data a{
@@ -275,13 +325,6 @@ q:after{
 }
 
 
-.impressum-adress p{
-  font-weight: 200;
-  font-size: 45px;
-  line-height: 45px;
-  text-transform: uppercase;
-}
-
 .impressum-maps {
   margin-top: 40px;
   margin-bottom: 150px;
@@ -296,14 +339,7 @@ q:after{
   line-height: 45px;
 }
 
-.impressum-maps p {
-  font-size: 16px;
-  text-transform: none;
-  font-weight: normal;
-  line-height: 16px;
-}
 
 .impressum-slide h2 {
-  font-size: 40px;
   margin-bottom: 80px;
 }
