@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="gds" class="title-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0007-2_crop.jpg" data-natural-width="1400" data-natural-height="787" data-speed="0.0" data-bleed="0">
+<section id="gds" class="title-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0007-2_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0.0" data-bleed="0">
   <div class="title-slide-shadow">
     <div class="container">
       <div class="row">
@@ -11,7 +11,7 @@
   </div>
 </section>
 
-<section id="start" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1400" data-natural-height="934" data-speed="1.0" data-bleed="10">
+<section id="start" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1 text-center">
@@ -27,7 +27,7 @@
   </div>
 </section>
 
-<section id="mandanten" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5846_crop.jpg" data-natural-width="1400" data-natural-height="787" data-speed="0.2" data-bleed="0">
+<section id="mandanten" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5846_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0.2" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -43,7 +43,7 @@
 </section>
 
 
-<section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1400" data-natural-height="934" data-speed="1.0" data-bleed="10">
+<section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -71,7 +71,7 @@
   </div>
 </section>
 
-<section id="leistungen" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0011_crop.jpg" data-natural-width="1400" data-natural-height="787" data-speed="0.2" data-bleed="0">
+<section id="leistungen" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0011_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0.2" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -88,7 +88,7 @@
 
 
 
-<!-- <section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1400" data-natural-height="934" data-speed="1.0" data-bleed="10"> -->
+<!-- <section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10"> -->
 <section class="content-slide parallax-slide">
   <div class="container">
     <div class="row">
@@ -245,7 +245,7 @@
 </section>
 
 
-<section id="team" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5866.jpg" data-natural-width="1400" data-natural-height="934" data-speed="0.2" data-bleed="0">
+<section id="team" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5866.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0.2" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -260,7 +260,7 @@
   </div>
 </section>
 
-<!--<section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1400" data-natural-height="934" data-speed="1.0" data-bleed="10">-->
+<!--<section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">-->
 <section class="content-slide parallax-slide">
   <div class="container">
     <div class="row">
@@ -341,7 +341,7 @@
   </div>
 </section>
 
-<section id="impressum" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0047_crop.jpg" data-natural-width="1400" data-natural-height="934" data-speed="0.2" data-bleed="0">
+<section id="impressum" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0047_crop.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0.2" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -357,7 +357,7 @@
 </section>
 
 
-<!--<section id="start" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1400" data-natural-height="934" data-speed="1.0" data-bleed="10">-->
+<!--<section id="start" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">-->
 <section id="start" class="impressum-slide parallax-slide">
   <div class="container">
     <div class="impressum-adress">
