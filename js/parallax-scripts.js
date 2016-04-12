@@ -3,12 +3,12 @@ $ = jQuery.noConflict();
 $(document).ready(function() {
   // initial calls
   onResizeTitleSlide();
-  onResizeTitleSlideDarkening();
+  onResizeTitleSlideCenter();
 
 
   // event listeners
   $(window).resize(onResizeTitleSlide);
-  $(window).resize(onResizeTitleSlideDarkening);
+  $(window).resize(onResizeTitleSlideCenter);
 });
 
 function testEvent(e) {
@@ -19,11 +19,11 @@ function onResizeTitleSlide() {
   $('.title-slide').height($(window).height());
 }
 
-function onResizeTitleSlideDarkening() {
-  $('.title-slide-shadow').height(function() {
+function onResizeTitleSlideCenter() {
+  $('.title-slide-center').height(function() {
     return $(this).parent().height();
   });
-  $('.title-slide-shadow').width(function() {
+  $('.title-slide-center').width(function() {
     return $(this).parent().width();
   });
 }

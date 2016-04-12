@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section id="gds" class="title-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0007-2_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0.0" data-bleed="0">
-  <div class="title-slide-shadow">
+  <div class="title-slide-center">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -27,7 +27,7 @@
   </div>
 </section>
 
-<section id="mandanten" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5846_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0.2" data-bleed="0">
+<section id="mandanten" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5846_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -71,7 +71,7 @@
   </div>
 </section>
 
-<section id="leistungen" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0011_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0.2" data-bleed="0">
+<section id="leistungen" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0011_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -245,7 +245,7 @@
 </section>
 
 
-<section id="team" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5866.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0.2" data-bleed="0">
+<section id="team" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5866.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
@@ -341,7 +341,7 @@
   </div>
 </section>
 
-<section id="impressum" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0047_crop.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0.2" data-bleed="0">
+<section id="impressum" class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0047_crop.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0" data-bleed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">

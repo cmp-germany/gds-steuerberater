@@ -83,8 +83,7 @@ q:after{
 
 /* .title-slide */
 
-.title-slide-shadow {
-  background-color: rgba(0, 0, 0, 0.5);
+.title-slide-center {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
@@ -240,7 +239,6 @@ q:after{
   margin-right: auto;
   border-radius: 220px;
   margin-bottom: 50px;
-  background-color: #282828;
   overflow: hidden;
 }
 
