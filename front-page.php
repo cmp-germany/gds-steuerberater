@@ -43,6 +43,11 @@
       </div>
     </div>
   </div>
+  <div class="title-slide-arrow floating">
+    <p class="title-slide-arrow-circle">
+      <a class="page-scroll" href="#start"><span class="glyphicon glyphicon-chevron-down"></span></a>
+    </p>
+  </div>
 </section>
 
 <section id="start" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">

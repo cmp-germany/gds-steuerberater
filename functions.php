@@ -27,6 +27,7 @@ function enqueue_css_js() {
 
   wp_enqueue_style('bootstrap-css', $bootstrap_dir . '/css/bootstrap.min.css');
   wp_enqueue_style('style-css', $root . '/style.css');
+	wp_enqueue_style('animate-css', $root . '/css/animation.css');
 
   wp_enqueue_style('lato-font', 'https://fonts.googleapis.com/css?family=Lato:400,700,900');
   wp_enqueue_style('arapey-font', 'https://fonts.googleapis.com/css?family=Arapey:400italic');
