@@ -19,8 +19,7 @@ function enqueue_css_js() {
   $bootstrap_dir = $bower . "/bootstrap/dist";
 
   wp_enqueue_script('bootstrap-js',  $bootstrap_dir . '/js/bootstrap.min.js', array('jquery'));
-  wp_enqueue_script('parallax-js',  $bower . '/parallax.js/parallax.js', array('jquery'));
-  wp_enqueue_script('parallax-scripts-js',  $root . '/js/parallax-scripts.js', array('jquery', 'parallax-js'));
+  wp_enqueue_script('parallax-scripts-js',  $root . '/js/parallax-scripts.js', array('jquery'));
   wp_enqueue_script('jquery-easing-min-js',  $root . '/js/jquery.easing.min.js', array('jquery'));
   wp_enqueue_script('scrolling-nav-js',  $root . '/js/scrolling-nav.js', array('jquery', 'jquery-easing-min-js'));
   wp_enqueue_script('scrollspy-js',  $root . '/js/scrollspy.js', array('jquery', 'scrolling-nav-js'));

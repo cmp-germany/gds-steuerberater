@@ -8,9 +8,10 @@ Version: 1.0
 Text Domain: gds-steuerberater
 */
 
+
 /*///////// General Resets */
 
-blockquote{
+blockquote {
   border: none;
 }
 
@@ -23,38 +24,31 @@ blockquote{
   background-color: #fff;
   color: #000;
 }
-
 @media (min-width: 992px) {
   .navbar {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-
 .navbar-brand {
   font-size: 220%;
 }
-
 .navbar-brand small {
   text-transform: uppercase;
   font-size: 40%;
 }
-
 .navbar-toggle {
   border-color: #000;
 }
-
 .navbar-toggle .icon-bar {
   background-color: #000;
 }
-
 .nav > li > a:focus, .nav > li > a:hover, .nav > li.active > a {
   background-color: inherit;
   color: #000;
   border-bottom: solid #000 1px;
   margin-bottom: -1px;
 }
-
 .nav li a {
   color: #999;
 }
@@ -64,171 +58,150 @@ blockquote{
 }*/
 
 
-
 /*///////// Typography */
 
 body {
   font-family: 'Lato', sans-serif;
 }
-
 h1 {
   font-weight: 900;
 }
-
 h2, .content-slide-intro, .panel-heading h4, .team-list li, .team-position, .nav li a {
   font-family: 'Arapey', serif;
   font-style: italic;
 }
-
 a:hover, a:focus, a:active, a:visited, a {
   text-decoration: none;
   color: inherit;
 }
-
-q{
+q {
   font-family: 'Arapey', serif;
   font-style: italic;
 }
-
-q:before{
+q:before {
   content: '„';
 }
-
-q:after{
+q:after {
   content: '“';
 }
-
 
 /*///////// Typography Sizes*/
 
 p, li {
   font-size: 16px;
 }
-
 .team-list li {
   font-size: 20px;
 }
-
 .team-name {
   font-size: 22px;
 }
-
 .team-degree {
   font-size: 20px;
 }
-
 .team-position {
   font-size: 23px;
 }
-
-.impressum-adress p{
+.impressum-adress p {
   font-size: 45px;
   line-height: 45px;
   text-transform: uppercase;
 }
-
 .impressum-maps p {
   font-size: 16px;
   text-transform: none;
   font-weight: normal;
   line-height: 16px;
 }
-
-
 h1 {
   font-size: 50px;
 }
-
 h2 {
   font-size: 50px;
 }
-
 .content-slide-intro {
   font-size: 30px;
 }
-
 blockquote q {
   font-size: 40px;
 }
-
 .nav li a {
   font-size: 20px;
 }
-
-
 .panel-heading h4 {
   font-size: 23px;
 }
-
 .title-slide h1 {
   font-size: 80px;
 }
-
 .title-slide h1 small {
   font-weight: 200;
   letter-spacing: 4px;
   font-size: 40px;
 }
-
 @media (max-width: 768px) {
   .title-slide h1 {
     font-size: 60px;
   }
-
   .title-slide h1 small {
     font-size: 25px;
   }
-
-  .impressum-adress p{
+  .impressum-adress p {
     font-size: 27px;
     line-height: 27px;
   }
-
   .impressum-maps p {
     font-size: 16px;
     line-height: 16px;
   }
-
   h1 {
     font-size: 35px;
   }
-
   h2 {
     font-size: 35px;
   }
-
   .content-slide-intro {
     font-size: 27px;
   }
-
   blockquote q {
     font-size: 27px;
   }
-
   .panel-heading h4 {
     font-size: 20px;
   }
-
 }
-
 
 /*///////// parallax-window Slides */
 
-/* GENERAL: .parallax-slide */
 
+/* PARALLAX EFFECT */
 
-.parallax-slide blockquote footer{
-  color: #333;
+.parallax-slide {
+  background: no-repeat center center;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+.parallax-slide[data-speed="0"] {
+  background-attachment: fixed;
+}
+
+/* GENERAL: .parallax-slide */
+
+.parallax-slide blockquote footer {
+  color: #333;
+}
 .parallax-slide p, .parallax-slide li {
   margin-bottom: 10px;
 }
-
 .parallax-slide .row {
   margin-bottom: 30px;
 }
-
 
 /* .title-slide */
 
@@ -237,7 +210,6 @@ blockquote q {
   vertical-align: middle;
   width: 100%;
 }
-
 .title-slide h1, .title-slide h1 small {
   color: #fff;
   text-align: center;
@@ -250,7 +222,6 @@ blockquote q {
   padding-top: 180px;
   padding-bottom: 180px;
 }
-
 .content-slide h2 {
   margin-top: 0;
 }
@@ -261,7 +232,6 @@ blockquote q {
   height: 900px;
   position: relative;
 }
-
 .quote-slide .quotation {
   position: absolute;
   bottom: 0px;
@@ -270,16 +240,13 @@ blockquote q {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
-.quote-slide blockquote{
+.quote-slide blockquote {
   border: none;
 }
-
-.quote-slide blockquote q{
+.quote-slide blockquote q {
   color: #000;
 }
-
-.quote-slide blockquote footer{
+.quote-slide blockquote footer {
   color: #333;
 }
 
@@ -288,13 +255,11 @@ blockquote q {
 .parallax-slide .panel:first-child {
   border-top: 1px solid #999999;
 }
-
 .parallax-slide .panel {
   border: none;
   border-bottom: 1px solid #999999;
   border-radius: 0px;
 }
-
 .parallax-slide .panel-heading {
   height: 80px;
   background-color: transparent;
@@ -302,28 +267,22 @@ blockquote q {
   display: flex;
   align-items: center;
 }
-
 .parallax-slide .text-center .panel-heading {
   justify-content: center;
 }
-
 .parallax-slide .panel-heading h4 {
   text-transform: uppercase;
 }
-
 .parallax-slide .panel-group .panel-heading+.panel-collapse>.list-group, .parallax-slide .panel-group .panel-heading+.panel-collapse>.panel-body {
-  border:none;
+  border: none;
 }
-
 .parallax-slide .panel-collapse {
   background-color: transparent;
   border: none;
 }
-
 .parallax-slide .panel-heading a:hover {
   text-decoration: none;
 }
-
 .parallax-slide .panel-heading a:focus {
   text-decoration: none;
 }
@@ -334,13 +293,11 @@ blockquote q {
   list-style: upper-roman;
   padding-left: 0px;
 }
-
 @media (max-width: 768px) {
   .team-list {
     padding-left: 50px;
   }
 }
-
 
 /* .teammember */
 
@@ -349,7 +306,6 @@ blockquote q {
   padding-bottom: 40px;
   padding-top: 80px;
 }
-
 .team-avatar {
   height: 220px;
   width: 220px;
@@ -359,16 +315,13 @@ blockquote q {
   margin-bottom: 50px;
   overflow: hidden;
 }
-
 .team-avatar img {
   width: 100%;
 }
-
 .team-name {
   text-transform: uppercase;
 }
-
-.team-data a{
+.team-data a {
   color: #333;
   text-decoration: none;
 }
@@ -379,23 +332,17 @@ blockquote q {
   padding-top: 180px;
   padding-bottom: 180px;
 }
-
-
 .impressum-maps {
   margin-top: 40px;
   margin-bottom: 150px;
 }
-
 .impressum-maps a {
   color: #333;
 }
-
-.impressum-maps p span.glyphicon{
+.impressum-maps p span.glyphicon {
   font-size: 45px;
   line-height: 45px;
 }
-
-
 .impressum-slide h2 {
   margin-bottom: 80px;
 }

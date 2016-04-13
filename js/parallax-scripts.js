@@ -2,6 +2,7 @@ $ = jQuery.noConflict();
 
 $(document).ready(function() {
   // initial calls
+  setBackgroundImages();
   onResizeTitleSlide();
   onResizeTitleSlideCenter();
 
@@ -25,5 +26,14 @@ function onResizeTitleSlideCenter() {
   });
   $('.title-slide-center').width(function() {
     return $(this).parent().width();
+  });
+}
+
+function setBackgroundImages() {
+  $('.parallax-slide').each(function() {
+    console.log($(this));
+    var backgroundSrc = $(this).data('imageSrc');
+    console.log(backgroundSrc);
+    $(this).css('background-image', 'url('+backgroundSrc+')');
   });
 }
