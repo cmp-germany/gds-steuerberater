@@ -13,9 +13,9 @@ $(document).ready(function() {
 
     // Hide Navigation Bar, if we are at title-slide
     if ($(e.target).hasClass('hidden')){
-      $('.navbar').hide();
+      $('.navbar').slideUp('fast');
     } else {
-      $('.navbar').show();
+      $('.navbar').slideDown('fast');
     }
 
     // change the url, depending where we are
