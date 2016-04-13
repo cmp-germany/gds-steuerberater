@@ -53,6 +53,10 @@ blockquote {
   color: #999;
 }
 
+.nav li a[href="#kontaktformular"] {
+  height: 51px;
+}
+
 /*.nav li a span.glyphicon {
   font-size: 60%;
 }*/
