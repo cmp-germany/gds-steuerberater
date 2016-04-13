@@ -10,10 +10,20 @@ $(document).ready(function() {
 
   // listen for scrollspy events on the navigation element itself
   $('#bs-example-navbar-collapse-1').on('activate.bs.scrollspy', function(e) {
+
+    // Hide Navigation Bar, if we are at title-slide
     if ($(e.target).hasClass('hidden')){
       $('.navbar').hide();
     } else {
       $('.navbar').show();
+    }
+
+    // change the url, depending where we are
+    if ($(e.target).hasClass('hidden')){
+      history.pushState(null, '', '#');
+    } else {
+      var hash = $(e.target).find('a').attr('href');
+      history.pushState(null, '', hash);
     }
   });
 });
