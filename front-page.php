@@ -16,8 +16,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div class="navbar-left">
-        <!-- <img src="http://lorempixel.com/g/150/60/business" alt="" />
-        <img src="http://lorempixel.com/g/160/60/business" alt="" /> -->
+        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/tuv.png" alt="TÜV Siegel" class="menu-bar-icon"/>
+        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/top.png" alt="TÜV Siegel" class="menu-bar-icon"/>
+        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/enterprise.png" alt="TÜV Siegel" class="menu-bar-icon"/>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
