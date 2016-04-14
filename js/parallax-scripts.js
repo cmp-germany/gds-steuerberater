@@ -31,9 +31,7 @@ function onResizeTitleSlideCenter() {
 
 function setBackgroundImages() {
   $('.parallax-slide[data-image-src]').each(function() {
-    console.log($(this));
     var backgroundSrc = $(this).data('imageSrc');
-    console.log(backgroundSrc);
     $(this).css('background-image', 'url('+backgroundSrc+')');
   });
 }

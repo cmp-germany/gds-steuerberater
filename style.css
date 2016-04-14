@@ -82,7 +82,7 @@ h2,
 .nav li a,
 .kontakt-slide input,
 .kontakt-slide textarea,
-.kontakt-slide button
+.kontakt-slide form button
 {
   font-family: 'Arapey', serif;
   font-style: italic;
@@ -130,7 +130,7 @@ p, li {
   font-weight: normal;
   line-height: 16px;
 }
-.kontakt-slide input, .kontakt-slide button, .kontakt-slide textarea {
+.kontakt-slide input, .kontakt-slide form button, .kontakt-slide textarea {
   font-size: 17px;
 }
 h1 {
@@ -421,7 +421,7 @@ blockquote q {
   background-color: #e6f1fc;
 }
 
-.kontakt-slide input, .kontakt-slide textarea, .kontakt-slide button {
+.kontakt-slide input, .kontakt-slide textarea, .kontakt-slide form button {
   border: 0;
 }
 
@@ -437,13 +437,13 @@ blockquote q {
   padding-top: 10px;
 }
 
-.kontakt-slide button {
+.kontakt-slide form button {
   background-color: #000;
   color: #fff;
   padding: 10px 80px;
 }
 
-.kontakt-slide button:hover, .kontakt-slide button:focus, .kontakt-slide button:active {
+.kontakt-slide form button:hover, .kontakt-slide form button:focus, .kontakt-slide form button:active {
   background-color: #111;
   color: #eee;
 }
