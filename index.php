@@ -38,6 +38,34 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<?php
+// check if the flexible content field has rows of data
+if( have_rows('onepage_elemente') ):
+
+     // loop through the rows of data
+    while ( have_rows('onepage_elemente') ) : the_row();
+
+    debug_to_console(get_row_layout());
+
+        if( get_row_layout() == 'paragraph' ):
+
+        	the_sub_field('text');
+
+        elseif( get_row_layout() == 'download' ):
+
+        	$file = get_sub_field('file');
+
+        endif;
+
+    endwhile;
+
+else :
+
+    // no layouts found
+
+endif;
+?>
+
 
 <section id="gds" class="title-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0007-2_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
   <div class="title-slide-center">
