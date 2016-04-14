@@ -16,12 +16,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div class="navbar-left">
-        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/tuv.png" alt="TÜV Siegel" class="menu-bar-icon"/>
-        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/top.png" alt="TÜV Siegel" class="menu-bar-icon"/>
-        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/enterprise.png" alt="TÜV Siegel" class="menu-bar-icon"/>
+        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/tuv.png" alt="TÜV Siegel" class="menu-bar-icon menu-bar-icon-hidable"/>
+        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/top.png" alt="TOP Siegel" class="menu-bar-icon menu-bar-icon-hidable"/>
+        <img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/enterprise.png" alt="Enterprise Siegel" class="menu-bar-icon menu-bar-icon-hidable"/>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+        <li class="nav-image-link"><a href="https://www.taxyourself.de"><img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/tyl.gif" alt="Tax Yourself Logo" class="menu-bar-icon"/></a></li>
         <li><a class="page-scroll" href="#start">Start</a></li>
         <li><a class="page-scroll" href="#mandanten">Mandanten</a></li>
         <li><a class="page-scroll" href="#leistungen">Leistungen</a></li>

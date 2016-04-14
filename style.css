@@ -24,7 +24,7 @@ blockquote {
   background-color: #fff;
   color: #000;
 }
-@media (min-width: 1165px) {
+@media (min-width: 1315px) {
   .navbar {
     padding-left: 50px;
     padding-right: 50px;
@@ -57,9 +57,12 @@ blockquote {
   height: 51px;
 }
 
-/*.nav li a span.glyphicon {
-  font-size: 60%;
-}*/
+.nav li.nav-image-link a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 51px;
+}
+
 
 
 /*///////// Typography */
@@ -203,8 +206,8 @@ blockquote q {
   margin-left: 10px;
 }
 
-@media (max-width: 1050px) {
-  .menu-bar-icon {
+@media (max-width: 1215px) {
+  .menu-bar-icon-hidable {
     display: none;
   }
 }
