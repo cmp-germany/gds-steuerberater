@@ -13,6 +13,8 @@ function debug_to_console( $data ) {
 	echo $output;
 }
 
+/* Styles und JS im Frontend hinzufügen */
+
 function enqueue_css_js() {
   $root = get_template_directory_uri();
   $bower = $root . "/bower_components";
