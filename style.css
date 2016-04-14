@@ -70,7 +70,17 @@ body {
 h1 {
   font-weight: 900;
 }
-h2, .content-slide-intro, .panel-heading h4, .team-list li, .team-position, .nav li a {
+
+h2,
+.content-slide-intro,
+.panel-heading h4,
+.team-list li,
+.team-position,
+.nav li a,
+.kontakt-slide input,
+.kontakt-slide textarea,
+.kontakt-slide button
+{
   font-family: 'Arapey', serif;
   font-style: italic;
 }
@@ -116,6 +126,9 @@ p, li {
   text-transform: none;
   font-weight: normal;
   line-height: 16px;
+}
+.kontakt-slide input, .kontakt-slide button, .kontakt-slide textarea {
+  font-size: 17px;
 }
 h1 {
   font-size: 50px;
@@ -395,4 +408,39 @@ blockquote q {
 }
 .impressum-slide h2 {
   margin-bottom: 80px;
+}
+
+/* .kontakt-slide */
+
+.kontakt-slide {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background-color: #e6f1fc;
+}
+
+.kontakt-slide input, .kontakt-slide textarea, .kontakt-slide button {
+  border: 0;
+}
+
+.kontakt-slide input{
+  padding: 20px 10px;
+}
+
+.kontakt-slide textarea {
+  padding: 10px 10px;
+}
+
+.kontakt-slide .form-horizontal label.control-label {
+  padding-top: 10px;
+}
+
+.kontakt-slide button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 80px;
+}
+
+.kontakt-slide button:hover, .kontakt-slide button:focus, .kontakt-slide button:active {
+  background-color: #111;
+  color: #eee;
 }

@@ -549,6 +549,47 @@
 </section>
 
 
+<section id="kontaktformular" class="kontakt-slide parallax-slide">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 text-center">
+        <h1>Interesse?</h1>
+        <h2>Schreiben Sie uns, wir sind gerne für Sie da</h2>
+      </div>
+    </div>
+    <div class="kontakt-form">
+      <div class="row">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="kontakt-name" class="col-sm-4 control-label">Ihr Vor- und Nachname</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="kontakt-name" placeholder="Ihr Vor- und Nachname">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="kontakt-email" class="col-sm-4 control-label">Ihre Email Adresse</label>
+            <div class="col-sm-7">
+              <input type="email" class="form-control" id="kontakt-email" placeholder="Ihre Email Adresse">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="kontakt-nachricht" class="col-sm-4 control-label">Ihre Nachricht an uns</label>
+            <div class="col-sm-7">
+              <textarea class="form-control" id="kontakt-nachricht" rows="6" placeholder="Ihre Nachricht an uns"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-7">
+              <button type="submit" class="btn btn-default">Senden</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 
