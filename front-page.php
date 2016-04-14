@@ -522,7 +522,7 @@
             <div id="collapse2_6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2_6">
               <div class="panel-body">
                 <p>
-                  Tax Yourself
+                  <a href="https://www.taxyourself.de" target="_blank"><img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/tyl.gif" alt="Tax Yourself Logo" class="menu-bar-icon"/></a>
                 </p>
               </div>
             </div>
