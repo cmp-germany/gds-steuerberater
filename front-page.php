@@ -22,7 +22,7 @@
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-        <li class="nav-image-link"><a href="https://www.taxyourself.de"><img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/tyl.gif" alt="Tax Yourself Logo" class="menu-bar-icon"/></a></li>
+        <li class="nav-image-link"><a href="https://www.taxyourself.de" target="_blank"><img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/tyl.gif" alt="Tax Yourself Logo" class="menu-bar-icon"/></a></li>
         <li><a class="page-scroll" href="#start">Start</a></li>
         <li><a class="page-scroll" href="#mandanten">Mandanten</a></li>
         <li><a class="page-scroll" href="#leistungen">Leistungen</a></li>
