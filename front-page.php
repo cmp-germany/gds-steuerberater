@@ -161,13 +161,13 @@
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="col-md-6">
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading1">
-              <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+              <div class="panel-heading" role="tab" id="heading1">
+                <h4 class="panel-title">
                   Steuerliche Beratung & Betreuung
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
               <div class="panel-body">
                 <ul>
@@ -183,13 +183,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading2">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              <div class="panel-heading" role="tab" id="heading2">
+                <h4 class="panel-title">
                   Finanzplanung & Unternehmensfinanzierung
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
               <div class="panel-body">
                 <ul>
@@ -202,13 +202,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading3">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              <div class="panel-heading" role="tab" id="heading3">
+                <h4 class="panel-title">
                   Nachfolgeplanung & Erbschaftssteuer
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
               <div class="panel-body">
                 <ul>
@@ -221,13 +221,13 @@
         </div>
         <div class="col-md-6">
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading4">
-              <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              <div class="panel-heading" role="tab" id="heading4">
+                <h4 class="panel-title">
                   Internationales Steuerrecht
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
               <div class="panel-body">
                 <ul>
@@ -240,13 +240,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading5">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              <div class="panel-heading" role="tab" id="heading5">
+                <h4 class="panel-title">
                   Existenzgründungsberatung
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
               <div class="panel-body">
                 <ul>
@@ -259,13 +259,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading6">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              <div class="panel-heading" role="tab" id="heading6">
+                <h4 class="panel-title">
                   Domicilservice
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
               <div class="panel-body">
                 <ul>
@@ -431,13 +431,13 @@
       <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
         <div class="col-md-10 col-md-offset-1 text-center">
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading2_1">
-              <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_1" aria-expanded="false" aria-controls="collapse2_1">
+            <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_1" aria-expanded="false" aria-controls="collapse2_1">
+              <div class="panel-heading" role="tab" id="heading2_1">
+                <h4 class="panel-title">
                   Geschäftsführer
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse2_1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2_1">
               <div class="panel-body">
                 <p>
@@ -447,13 +447,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading2_2">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_2" aria-expanded="false" aria-controls="collapse2_2">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_2" aria-expanded="false" aria-controls="collapse2_2">
+              <div class="panel-heading" role="tab" id="heading2_2">
+                <h4 class="panel-title">
                   Handelsregister
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse2_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2_2">
               <div class="panel-body">
                 <p>
@@ -463,13 +463,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading2_3">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_3" aria-expanded="false" aria-controls="collapse2_3">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_3" aria-expanded="false" aria-controls="collapse2_3">
+              <div class="panel-heading" role="tab" id="heading2_3">
+                <h4 class="panel-title">
                   Verantwortlich für den Inhalt
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse2_3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2_3">
               <div class="panel-body">
                 <p>
@@ -479,13 +479,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading2_4">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_4" aria-expanded="false" aria-controls="collapse2_4">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_4" aria-expanded="false" aria-controls="collapse2_4">
+              <div class="panel-heading" role="tab" id="heading2_4">
+                <h4 class="panel-title">
                   Zuständige Kammer
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse2_4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2_4">
               <div class="panel-body">
                 <p>
@@ -495,13 +495,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading2_5">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_5" aria-expanded="false" aria-controls="collapse2_5">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_5" aria-expanded="false" aria-controls="collapse2_5">
+              <div class="panel-heading" role="tab" id="heading2_5">
+                <h4 class="panel-title">
                   Unsere Partner
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse2_5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2_5">
               <div class="panel-body">
                 <p>
@@ -511,13 +511,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading2_6">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_6" aria-expanded="false" aria-controls="collapse2_6">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_6" aria-expanded="false" aria-controls="collapse2_6">
+              <div class="panel-heading" role="tab" id="heading2_6">
+                <h4 class="panel-title">
                   Unser Shop
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse2_6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2_6">
               <div class="panel-body">
                 <p>
@@ -527,13 +527,13 @@
             </div>
           </div>
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="heading2_7">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_7" aria-expanded="false" aria-controls="collapse2_7">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2_7" aria-expanded="false" aria-controls="collapse2_7">
+              <div class="panel-heading" role="tab" id="heading2_7">
+                <h4 class="panel-title">
                   Unsere Auszeichnungen
-                </a>
-              </h4>
-            </div>
+                </h4>
+              </div>
+            </a>
             <div id="collapse2_7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2_7">
               <div class="panel-body">
                 <p>
