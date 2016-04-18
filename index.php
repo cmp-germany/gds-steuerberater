@@ -41,7 +41,6 @@
 
           endif;
         ?>
-        <li><a class="page-scroll" href="#mandanten">Mandanten</a></li>
         <li><a class="page-scroll" href="#leistungen">Leistungen</a></li>
         <li><a class="page-scroll" href="#team">Team</a></li>
         <li><a class="page-scroll" href="#impressum">Kontakt &amp; Impressum</a></li>
@@ -67,34 +66,6 @@ else :
 endif;
 ?>
 
-
-<section id="mandanten" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>Was Unternehmer nicht interessiert,</h1>
-        <h2>aber doch für den Geschäftserfolg so wichtig ist...</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p>
-          Als Unternehmer möchten Sie sich in erster Linie um Ihr Kerngeschäft kümmern und dabei möglichst nicht behindert werden – zum Beispiel von Bürokratie und ausufernden Steuergesetzen. Andererseits möchten sie die Sicherheit haben, dass Verwaltung und Finanzen geordnet sind, alle Anforderungen von Banken und Gesetzgeber möglichst unauffällig erfüllt werden, die Unternehmensplanung immer auf dem neuesten Stand ist und nur so viele Steuern wie nötig gezahlt werden.
-        </p>
-      </div>
-      <div class="col-md-6">
-        <p>
-          Unternehmer brauchen auf diesem Gebiet Partner, auf die sie sich wirklich verlassen können. Die sich mit wenig Aufwand, aber doch immer im Einklang mit den Wünschen ihres Kunden und dem nötigen Know-how um die finanziellen und steuerlichen Aspekte des Unternehmens kümmern. GDS ist ein solcher Partner.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 text-center">
-          <p class="content-slide-intro">„Gerne laden wir Sie auf einen Kaffee in unseren Räumlichkeiten ein.“</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0011_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
   <div class="quotation">
