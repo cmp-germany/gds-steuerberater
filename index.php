@@ -46,7 +46,6 @@
 
           endif;
         ?>
-        <li><a class="page-scroll" href="#leistungen">Leistungen</a></li>
         <li><a class="page-scroll" href="#team">Team</a></li>
         <li><a class="page-scroll" href="#impressum">Kontakt &amp; Impressum</a></li>
         <li><a class="page-scroll" href="#kontaktformular"><span class="glyphicon glyphicon-envelope"></span></a></li>
