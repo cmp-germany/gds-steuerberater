@@ -46,7 +46,6 @@
 
           endif;
         ?>
-        <li><a class="page-scroll" href="#team">Team</a></li>
         <li><a class="page-scroll" href="#impressum">Kontakt &amp; Impressum</a></li>
         <li><a class="page-scroll" href="#kontaktformular"><span class="glyphicon glyphicon-envelope"></span></a></li>
       </ul>
@@ -69,105 +68,6 @@ else :
 
 endif;
 ?>
-
-
-
-
-<section class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5866.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0" data-bleed="0">
-  <div class="quotation">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1 text-center">
-          <blockquote>
-            <q>Nur wenn unsere Mandanten ihre Erfüllung bestätigen, können wir zufrieden sein.</q>
-            <!--<footer>Ein Kunde der GDS<cite title="Source Title">Source Title</cite></footer>-->
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--<section class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">-->
-<section id="team" class="content-slide parallax-slide">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>Das Team</h1>
-        <h2>Woran wir uns messen</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 text-center">
-          <p class="content-slide-intro">Für die GDS ist es eine erste Verpflichtung, sich in ihre Mandanten hineinzudenken. Deshalb haben wir uns als ganzes Team folgende Grundsätze für unsere Arbeit gegeben:</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-7 col-sm-offset-4">
-        <ol class="team-list">
-          <li>Immer den Dialog mit den Mandanten suchen</li>
-          <li>Partnerschaftlich auf Augenhöhe kommunizieren</li>
-          <li>Den Mandanten richtig zuhören und ihre Probleme verstehen</li>
-          <li>Sehr individuell und persönlich auf die Mandanten eingehen</li>
-          <li>Schlanke, kostenbewusste Lösungen für das Unternehmen entwickeln</li>
-        </ol>
-      </div>
-    </div>
-    <div class="teammember">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-avatar">
-            <img src="<?= get_template_directory_uri() ?>/gfx/UweDiekmann.jpg" alt="Bild von Uwe Diekmann" />
-          </div>
-        </div>
-        <div class="col-sm-7 team-description">
-          <h4>
-            <span class="team-name">Uwe Diekmann</span>, <span class="team-degree">Dipl. – Kaufmann</span>, <span class="team-position">Steuerberater & geschäftsführender Gesellschafter</span>
-          </h4>
-          <p class="team-data">
-            <strong>Telefon</strong> +49 221 800474 0 | <strong>E-Mail</strong> <a href="mailto:u.diekmann@gds-steuerberatung.de">u.diekmann@gds-steuerberatung.de</a>
-          </p>
-          <div class="team-text">
-            <p>
-              2005 gründete Uwe Diekmann seine eigene Steuerberatungskanzlei in Köln-Rodenkirchen, die heutige GDS – Köln KG, nachdem er sich, nach langjähriger Tätigkeit als Leiter im Bereich der Konzernsteuerung bei einem großen deutschen Immobilienkonzern, dazu entschloss, den Schritt in die berufliche Selbständigkeit zu wagen.
-            </p>
-            <p>
-              Uwe Diekmann liegt es am Herzen, Spitzenleistungen für jeden Mandanten zu erreichen und die individuellen Ansprüche zu erfüllen. Dies erfordert ein Höchstmaß an persönlicher Betreuung und die Meisterung von täglich neuen Herausforderungen.
-            </p>
-            <p>
-              Uwe Diekmann hat Betriebswirtschaftslehre an der Universität zu Köln studiert und sich hierbei auf die Schwerpunkte Steuern und Wirtschaftsprüfung konzentriert. Im Jahr 1996 folgte das Steuerberaterexamen mit dem Abschluss als Steuerberater.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="teammember">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-avatar">
-            <img src="<?= get_template_directory_uri() ?>/gfx/FrankSchuerholz.jpg" alt="Bild von Frank Schürholz" />
-          </div>
-        </div>
-        <div class="col-sm-7 team-description">
-          <h4>
-            <span class="team-name">Frank Schürzholz</span>, <span class="team-degree">Dipl. – Betriebswirt (FH)</span>, <span class="team-position">Steuerberater & geschäftsführender Gesellschafter</span>
-          </h4>
-          <p class="team-data">
-            <strong>Telefon</strong> +49 221 800474 0 | <strong>E-Mail</strong> <a href="mailto:f.schuerholz@gds-steuerberatung.de">f.schuerholz@gds-steuerberatung.de</a>
-          </p>
-          <div class="team-text">
-            <p>
-              Seit 2006 gehört Frank Schürholz zum Team der Steuerberatungsgesellschaft GDS – Köln KG und ist seit 2008 geschäftsführender Gesellschafter. Frank Schürholz kann auf langjährige Berufserfahrungen zurückgreifen. Bereits seit 1990 ist er im Bereich der Steuerberatung tätig. Eine ganzheitliche, individuelle und optimale Betreuung der Mandanten steht für ihn an oberster Stelle.
-            </p>
-            <p>
-              Nach der Ausbildung zum Fachgehilfen in Steuer- und Wirtschaftsberatenden Berufen konnte Frank Schürzholz 1998 sein Studium an der Fachhochschule Worms im Fachbereich Betriebswirtschaft VII – Steuerwesen – mit dem Abschluss als Diplom-Betriebswirt (FH) erfolgreich beenden. Im Jahr 2003 absolvierte er die Steuerberaterprüfung mit dem Abschluss als Steuerberater.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0047_crop.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="0" data-bleed="0">
   <div class="quotation">
