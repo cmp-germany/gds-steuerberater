@@ -14,7 +14,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand page-scroll" href="#gds">GDS <small>Steuerberatung</small></a>
+      <a class="navbar-brand page-scroll" href="#page-top">GDS <small>Steuerberatung</small></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,7 +27,20 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
         <li class="nav-image-link"><a href="https://www.taxyourself.de" target="_blank"><img src="<?= get_template_directory_uri() ?>/gfx/menu-bar/tyl.gif" alt="Tax Yourself Logo" class="menu-bar-icon"/></a></li>
-        <li><a class="page-scroll" href="#start">Start</a></li>
+        <?php
+          if( have_rows('onepage_elemente') ):
+              while ( have_rows('onepage_elemente') ) : the_row();
+              if (get_sub_field('in_navigation_sichtbar')) {
+                ?><li><a class="page-scroll" href="#<?= get_sub_field('navigation_link') ?>"><?= get_sub_field('navigation_beschriftung') ?></a></li><?php
+              }
+              endwhile;
+
+          else :
+
+              // no layouts found
+
+          endif;
+        ?>
         <li><a class="page-scroll" href="#mandanten">Mandanten</a></li>
         <li><a class="page-scroll" href="#leistungen">Leistungen</a></li>
         <li><a class="page-scroll" href="#team">Team</a></li>
@@ -41,22 +54,10 @@
 <?php
 // check if the flexible content field has rows of data
 if( have_rows('onepage_elemente') ):
-
-     // loop through the rows of data
+    $id = 0;
     while ( have_rows('onepage_elemente') ) : the_row();
-
-    debug_to_console(get_row_layout());
-
-        if( get_row_layout() == 'paragraph' ):
-
-        	the_sub_field('text');
-
-        elseif( get_row_layout() == 'download' ):
-
-        	$file = get_sub_field('file');
-
-        endif;
-
+    $the_id = 'onepage_element-'.$id++;
+    get_template_part('onepage', get_row_layout());
     endwhile;
 
 else :
@@ -65,55 +66,6 @@ else :
 
 endif;
 ?>
-
-
-<section id="gds" class="title-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC0007-2_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
-  <div class="title-slide-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <h1>GDS<br><small>Steuerberatung</small></h1>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="title-slide-arrow floating">
-    <p class="title-slide-arrow-circle">
-      <a class="page-scroll" href="#start"><span class="glyphicon glyphicon-chevron-down"></span></a>
-    </p>
-  </div>
-</section>
-
-<section id="start" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 text-center">
-        <h1>Von Mensch zu Mensch</h1>
-        <h2>zuverlässig und kompetent</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 text-center">
-        <p class="content-slide-intro">Das ist für uns nicht nur ein Spruch, sondern unsere Einstellung, mit der wir unsere Mandanten immer wieder aufs Neue beraten und betreuen.  Unser Konzept beruht auf Individualität, Ehrlichkeit, Qualität und Wirtschaftlichkeit. Denn gerade in so persönlichen Angelegenheiten wie Steuern brauchen Sie jemanden, dem Sie blind vertrauen können – wir nehmen Sie gerne an die Hand und führen Sie durch das Labyrinth der Steuern.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5846_crop.jpg" data-natural-width="1600" data-natural-height="900" data-speed="0" data-bleed="0">
-  <div class="quotation">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1 text-center">
-          <blockquote>
-            <q>Mit der GDS habe ich einen vertrauensvollen Partner an meiner Seite, der mich in Steuerthemen mit Herz und Kopf unterstützt.</q>
-            <!--<footer>Ein Kunde der GDS<cite title="Source Title">Source Title</cite></footer>-->
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <section id="mandanten" class="content-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_template_directory_uri() ?>/gfx/_DSC5899.jpg" data-natural-width="1600" data-natural-height="1068" data-speed="1.0" data-bleed="10">
@@ -594,8 +546,6 @@ endif;
       <div class="row">
         <?php
           echo $response;
-          debug_to_console($_POST);
-          debug_to_console($response);
         ?>
         <form class="form-horizontal" action="<?php the_permalink(); ?>#kontaktformular" method="post">
           <div class="form-group">
