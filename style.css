@@ -247,6 +247,7 @@ blockquote q {
 /* .title-slide */
 
 .title-slide-center {
+  background-color: rgba(0, 0, 0, 0.5);
   display: table-cell;
   vertical-align: middle;
   width: 100%;
