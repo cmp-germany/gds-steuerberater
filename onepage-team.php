@@ -30,7 +30,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-avatar">
-              <img src="<?= get_sub_field('bild')['url'] ?>" alt="Bild von <?= get_sub_field('name') ?>" />
+              <img src="<?php $bild = get_sub_field('bild'); echo $bild['url']; ?>" alt="Bild von <?= get_sub_field('name') ?>" />
             </div>
           </div>
           <div class="col-sm-7 team-description">

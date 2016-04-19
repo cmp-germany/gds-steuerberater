@@ -3,7 +3,7 @@
     echo "id=\"".get_sub_field('navigation_link'). "\"";
   }; ?>
 
-  class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?= get_sub_field('hintergrund_bild')['url'] ?>" data-speed="0">
+  class="quote-slide parallax-slide" data-parallax="scroll" data-image-src="<?php $hintergrund_bild = get_sub_field('hintergrund_bild'); echo $hintergrund_bild['url']; ?>" data-speed="0">
   <div class="quotation">
     <div class="container">
       <div class="row">
