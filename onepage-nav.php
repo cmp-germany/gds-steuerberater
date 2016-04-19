@@ -11,7 +11,8 @@
       <?php if (get_field('navigation_brand') == 'text') { ?>
         <a class="navbar-brand page-scroll" href="#page-top"><?= get_field('navigation_titel') ?> <small><?= get_field('navigation_untertitel') ?></small></a>
       <?php } else {?>
-        <a class="navbar-brand navbar-brand-logo page-scroll" href="#page-top"><img src="<?= get_field('navigation_logo')['url']; ?>" alt="<?= get_field('navigation_logo')['alt']; ?>" class="menu-bar-icon"/></a>
+        <?php $navigation_logo = get_field('navigation_logo'); ?>
+        <a class="navbar-brand navbar-brand-logo page-scroll" href="#page-top"><img src="<?= $navigation_logo['url'] ?>" alt="<?= $navigation_logo['alt'] ?>" class="menu-bar-icon"/></a>
       <?php } ?>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
