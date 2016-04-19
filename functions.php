@@ -37,3 +37,5 @@ function enqueue_css_js() {
   wp_enqueue_style('arapey-font', 'https://fonts.googleapis.com/css?family=Arapey:400italic');
 }
 add_action('wp_enqueue_scripts', 'enqueue_css_js');
+
+include_once 'acf.php';
