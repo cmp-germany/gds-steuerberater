@@ -206,7 +206,7 @@ blockquote q {
   margin-left: 10px;
 }
 
-@media (max-width: 1215px) {
+@media (max-width: 1230px) {
   .menu-bar-icon-hidable {
     display: none;
   }
