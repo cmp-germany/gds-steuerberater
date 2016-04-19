@@ -14,11 +14,13 @@
   </div>
   <div class="title-slide-arrow floating">
     <p class="title-slide-arrow-circle">
-      <a class="page-scroll" href="#start"><span class="glyphicon glyphicon-chevron-down"></span></a>
+      <a id="title-slide-arrow-anchor" class="page-scroll"><span class="glyphicon glyphicon-chevron-down"></span></a>
       <script type="text/javascript">
         $ = jQuery.noConflict();
         $(document).ready(function(){
-
+          $('#title-slide-arrow-anchor').attr('href', function() {
+            return '#' + $(this).parents('section').nextAll('[id]').first().attr('id');
+          })
         })
       </script>
     </p>
