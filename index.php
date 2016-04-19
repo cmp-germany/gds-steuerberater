@@ -1,6 +1,5 @@
-<?php include_once 'emails.php'; ?>
-
 <?php
+  include_once 'emails.php';
   $accordion_nr = 0;
   $collapse_nr  = 0;
 ?>
@@ -46,7 +45,6 @@
 
           endif;
         ?>
-        <li><a class="page-scroll" href="#impressum">Kontakt &amp; Impressum</a></li>
         <li><a class="page-scroll" href="#kontaktformular"><span class="glyphicon glyphicon-envelope"></span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -56,9 +54,9 @@
 <?php
 
 if( have_rows('onepage_elemente') ):
-    while ( have_rows('onepage_elemente') ) : the_row();
+  while ( have_rows('onepage_elemente') ) : the_row();
     get_template_part('onepage', get_row_layout());
-    endwhile;
+  endwhile;
 else :
     // no layouts found
 endif;

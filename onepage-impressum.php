@@ -1,3 +1,4 @@
+<?php global $accordion_nr, $collapse_nr; ?>
 <section
   <?php if (get_sub_field('in_navigation_sichtbar')){
     echo "id=\"".get_sub_field('navigation_link'). "\"";
