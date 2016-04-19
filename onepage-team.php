@@ -19,7 +19,7 @@
     <div class="row">
       <div class="col-sm-7 col-sm-offset-4">
         <ol class="team-list">
-          <?php while ( have_rows('leistungen1') ) : the_row(); ?>
+          <?php while ( have_rows('werte') ) : the_row(); ?>
             <li><?= get_sub_field('wert') ?></li>
           <?php endwhile; ?>
         </ol>
