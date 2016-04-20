@@ -3,7 +3,9 @@
     echo "id=\"".get_sub_field('navigation_link'). "\"";
   }; ?>
 
-  class="content-slide parallax-slide">
+  class="content-slide parallax-slide" <?php $hintergrund_bild = get_sub_field('hintergrund_bild'); if ($hintergrund_bild) { ?>data-image-src="<?= $hintergrund_bild['url'] ?>" data-speed="1.0"<?php } ?>
+  style="padding-bottom: 20px;"
+  >
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -27,6 +29,10 @@
         </ol>
       </div>
     </div>
+  </div>
+</section>
+<section class="content-slide parallax-slide" style="padding-top: 0px;">
+  <div class="container">
     <?php while ( have_rows('teammitglieder') ) : the_row(); ?>
       <div class="teammember">
         <div class="row">
