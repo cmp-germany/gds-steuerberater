@@ -106,15 +106,7 @@ acf_add_local_field_group(array (
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
-			'conditional_logic' => array (
-				array (
-					array (
-						'field' => 'field_571602da219e6',
-						'operator' => '==',
-						'value' => 'text',
-					),
-				),
-			),
+			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
 				'class' => '',

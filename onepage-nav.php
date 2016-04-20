@@ -12,7 +12,7 @@
         <a class="navbar-brand page-scroll" href="#page-top"><?= get_field('navigation_titel') ?> <small><?= get_field('navigation_untertitel') ?></small></a>
       <?php } else {?>
         <?php $navigation_logo = get_field('navigation_logo'); ?>
-        <a class="navbar-brand navbar-brand-logo page-scroll" href="#page-top"><img src="<?= $navigation_logo['url'] ?>" alt="<?= $navigation_logo['alt'] ?>" class="menu-bar-icon"/></a>
+        <a class="navbar-brand navbar-brand-logo page-scroll" href="#page-top"><p style="font-size: 100%;"><img src="<?= $navigation_logo['url'] ?>" alt="<?= $navigation_logo['alt'] ?>" class="menu-bar-icon"/><?php if (get_field('navigation_untertitel')) {?> <small><?= get_field('navigation_untertitel') ?></small><?php } ?></p></a>
       <?php } ?>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
