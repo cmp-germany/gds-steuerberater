@@ -14,7 +14,7 @@
         </div>
         <?php if (get_sub_field('google_maps_link_anzeigen')): ?>
           <div class="col-md-10 col-md-offset-1 text-center impressum-maps">
-            <a href="<?= get_sub_field('google_maps_link') ?>">
+            <a href="<?= get_sub_field('google_maps_link') ?>" target="_blank">
               <p>
                 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
               </p>
