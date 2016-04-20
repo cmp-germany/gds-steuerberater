@@ -37,7 +37,7 @@
           </div>
           <div class="col-sm-7 team-description">
             <h4>
-              <span class="team-name"><?= get_sub_field('name') ?></span>, <span class="team-degree">Dipl. – Kaufmann</span>, <span class="team-position"><?= get_sub_field('position') ?></span>
+              <span class="team-name"><?= get_sub_field('name') ?></span>, <span class="team-degree">Dipl. – Kaufmann</span><br><span class="team-position"><?= get_sub_field('position') ?></span>
             </h4>
             <p class="team-data">
               <strong>Telefon</strong> <?= get_sub_field('telefon') ?> | <strong>E-Mail</strong> <a href="mailto:<?= get_sub_field('email') ?>"><?= get_sub_field('email') ?></a>
