@@ -20,8 +20,10 @@
       <div class="navbar-left">
         <?php
           $logos = get_field('navigation_additional_logos');
-          foreach ($logos as $logo) {
-            ?><img src="<?= $logo['bild']['url'] ?>" alt="<?= $logo['bild']['alt'] ?>" class="menu-bar-icon menu-bar-icon-hidable"/><?php
+          if ($logos) {
+            foreach ($logos as $logo) {
+              ?><img src="<?= $logo['bild']['url'] ?>" alt="<?= $logo['bild']['alt'] ?>" class="menu-bar-icon menu-bar-icon-hidable"/><?php
+            }
           }
         ?>
       </div>
