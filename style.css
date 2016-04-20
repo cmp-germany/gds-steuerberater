@@ -153,6 +153,7 @@ blockquote q {
 }
 .title-slide h1 {
   font-size: 80px;
+  font-weight: 300;
 }
 .title-slide h1 small {
   font-weight: 200;
