@@ -14,7 +14,6 @@ function debug_to_console( $data ) {
 }
 
 /* Styles und JS im Frontend hinzufügen */
-
 function enqueue_css_js() {
   $root = get_template_directory_uri();
   $bower = $root . "/bower_components";
@@ -38,4 +37,15 @@ function enqueue_css_js() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_css_js');
 
+/* Advanced Custom Fields für die Anzeige der Backendelemente laden */
 include_once 'acf.php';
+
+/* Nicht benötigte Menüpunkte im Backend von WP entfernen */
+add_action( 'admin_menu', 'endcore_remove_menu_pages' );
+function endcore_remove_menu_pages() {
+  remove_menu_page('edit.php'); // Entfernt den Punkt Artikel (seit 3.5 Beitrge)
+  remove_menu_page('upload.php'); // Entfernt den Punkt Mediathek
+  // remove_menu_page('link-manager.php'); // Entfernt den Punkt Links (nur fr Versionen vor 3.5)
+  // remove_menu_page('edit.php?post_type=page'); // Entfernt den Punkt Seiten
+  remove_menu_page('edit-comments.php'); // Entfernt den Punkt Kommentare
+}
