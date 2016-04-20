@@ -24,7 +24,7 @@ blockquote {
   background-color: #fff;
   color: #000;
 }
-@media (min-width: 1315px) {
+@media (min-width: 1440px) {
   .navbar {
     padding-left: 50px;
     padding-right: 50px;
@@ -207,7 +207,7 @@ blockquote q {
   margin-left: 10px;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1330px) {
   .menu-bar-icon-hidable {
     display: none;
   }
