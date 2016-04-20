@@ -12,14 +12,10 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <p>
-          <?= get_sub_field('text1') ?>
-        </p>
+        <?= get_sub_field('text1') ?>
       </div>
       <div class="col-md-6">
-        <p>
-          <?= get_sub_field('text2') ?>
-        </p>
+        <?= get_sub_field('text2') ?>
       </div>
     </div>
     <?php if (get_sub_field('quote')): ?>

@@ -139,7 +139,7 @@ h1 {
 h2 {
   font-size: 50px;
 }
-.content-slide-intro {
+.content-slide-intro, .content-slide-intro * {
   font-size: 30px;
 }
 blockquote q {

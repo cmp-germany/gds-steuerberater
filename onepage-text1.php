@@ -12,7 +12,9 @@
     </div>
     <div class="row">
       <div class="col-md-10 col-md-offset-1 text-center">
-        <p class="content-slide-intro"><?= get_sub_field('text') ?></p>
+        <div class="content-slide-intro">
+          <?= get_sub_field('text') ?>
+        </div>
       </div>
     </div>
   </div>
