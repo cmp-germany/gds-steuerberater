@@ -4,8 +4,7 @@
     echo "id=\"".get_sub_field('navigation_link'). "\"";
   }; ?>
   class="content-slide parallax-slide" <?php $hintergrund_bild = get_sub_field('hintergrund_bild'); if ($hintergrund_bild) { ?>data-image-src="<?= $hintergrund_bild['url'] ?>" data-speed="1.0"<?php } ?>
-  style="padding-bottom: 0;"
-  >
+>
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -29,8 +28,6 @@
       </div>
     </div>
   </div>
-</section>
-<section class="content-slide parallax-slide" style="padding-top: 40px;">
   <div class="container">
     <div class="row">
       <div class="panel-group" id="accordion-<?= ++$accordion_nr ?>" role="tablist" aria-multiselectable="true">

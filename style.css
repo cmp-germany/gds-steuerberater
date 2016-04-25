@@ -350,6 +350,7 @@ blockquote q {
   border: none;
   border-bottom: 1px solid #999999;
   border-radius: 0px;
+  background-color: transparent;
 }
 .parallax-slide .panel-heading {
   height: 80px;
