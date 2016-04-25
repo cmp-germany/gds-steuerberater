@@ -33,6 +33,13 @@
 </section>
 <section class="content-slide parallax-slide" style="padding-top: 0px;">
   <div class="container">
+    <?php
+      if (get_sub_field('hyphenate')) {
+        $hyphenate_text = ' hyphenate';
+      } else {
+        $hyphenate_text = '';
+      }
+    ?>
     <?php while ( have_rows('teammitglieder') ) : the_row(); ?>
       <div class="teammember">
         <div class="row">
@@ -48,7 +55,7 @@
             <p class="team-data">
               <strong>Telefon</strong> <?= get_sub_field('telefon') ?> | <strong>E-Mail</strong> <a href="mailto:<?= get_sub_field('email') ?>"><?= get_sub_field('email') ?></a>
             </p>
-            <div class="team-text">
+            <div class="team-text<?= $hyphenate_text ?>">
               <?= get_sub_field('beschreibung') ?>
             </div>
           </div>

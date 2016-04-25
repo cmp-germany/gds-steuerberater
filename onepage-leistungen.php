@@ -21,10 +21,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6<?php if (get_sub_field('hyphenate')) { echo ' hyphenate'; } ?>">
         <?= get_sub_field('text1') ?>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6<?php if (get_sub_field('hyphenate')) { echo ' hyphenate'; } ?>">
         <?= get_sub_field('text2') ?>
       </div>
     </div>
