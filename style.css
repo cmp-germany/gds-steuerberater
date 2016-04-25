@@ -221,6 +221,11 @@ blockquote q {
   margin-left: 7px;
 }
 
+.menu-bar-icon-logo {
+  height: 70px;
+  margin-top: -10px;
+}
+
 .navbar-left {
   margin-left: 10px;
 }
