@@ -28,35 +28,40 @@
   $message_unsent  = "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.";
   $message_sent    = "Vielen Dank. Ihre Nachricht wurde versandt.";
 
-  //user posted variables
-  $name = $_POST['message_name'];
-  $email = $_POST['message_email'];
-  $message = $_POST['message_text'];
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-  //php mailer variables
-  $to = $_POST['mailto'];
+    //user posted variables
+    $name = $_POST['message_name'];
+    $email = $_POST['message_email'];
+    $message = $_POST['message_text'];
 
-  $subject = "Neue Nachricht über ".get_bloginfo('name');
-  $headers = 'From: '. $name . ' <' .$email . '>'. "\r\n" .
-    'Reply-To: ' . $email . "\r\n";
+    //php mailer variables
+    $to = $_POST['mailto'];
 
-if ($_POST['submitted']) {
-  //validate email
-  if(!filter_var($email, FILTER_VALIDATE_EMAIL))
-    my_contact_form_generate_response("error", $email_invalid);
-  else //email is valid
-  {
-    //validate presence of name and message
-    if(empty($name) || empty($message)){
-      my_contact_form_generate_response("error", $missing_content);
+    $subject = "Neue Nachricht über ".get_bloginfo('name');
+    $headers = 'From: '. $name . ' <' .$email . '>'. "\r\n" .
+      'Reply-To: ' . $email . "\r\n";
+
+    if ($_POST['submitted']) {
+      //validate email
+      if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+        my_contact_form_generate_response("error", $email_invalid);
+      else //email is valid
+      {
+        //validate presence of name and message
+        if(empty($name) || empty($message)){
+          my_contact_form_generate_response("error", $missing_content);
+        }
+        else //ready to go!
+        {
+          $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+          if($sent) my_contact_form_generate_response("success", $message_sent); //message sent!
+          else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
+        }
+      }
     }
-    else //ready to go!
-    {
-      $sent = wp_mail($to, $subject, strip_tags($message), $headers);
-      if($sent) my_contact_form_generate_response("success", $message_sent); //message sent!
-      else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
-    }
+
   }
-}
+
 
 ?>

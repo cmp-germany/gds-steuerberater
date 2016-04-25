@@ -22,19 +22,19 @@
           <div class="form-group">
             <label for="kontakt-name" class="col-sm-4 control-label"><?= get_sub_field('beschriftung_name') ?></label>
             <div class="col-sm-7">
-              <input type="text" class="form-control" id="kontakt-name" placeholder="<?= get_sub_field('beschriftung_name') ?>" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>">
+              <input type="text" class="form-control" id="kontakt-name" placeholder="<?= get_sub_field('beschriftung_name') ?>" name="message_name" value="<?php if($_SERVER['REQUEST_METHOD'] == 'POST') {echo esc_attr($_POST['message_name']);} ?>">
             </div>
           </div>
           <div class="form-group">
             <label for="kontakt-email" class="col-sm-4 control-label"><?= get_sub_field('beschriftung_email') ?></label>
             <div class="col-sm-7">
-              <input type="email" class="form-control" id="kontakt-email" placeholder="<?= get_sub_field('beschriftung_email') ?>" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>">
+              <input type="email" class="form-control" id="kontakt-email" placeholder="<?= get_sub_field('beschriftung_email') ?>" name="message_email" value="<?php if($_SERVER['REQUEST_METHOD'] == 'POST') {echo esc_attr($_POST['message_email']);} ?>">
             </div>
           </div>
           <div class="form-group">
             <label for="kontakt-nachricht" class="col-sm-4 control-label"><?= get_sub_field('beschriftung_nachricht') ?></label>
             <div class="col-sm-7">
-              <textarea class="form-control" id="kontakt-nachricht" rows="6" placeholder="<?= get_sub_field('beschriftung_nachricht') ?>" name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
+              <textarea class="form-control" id="kontakt-nachricht" rows="6" placeholder="<?= get_sub_field('beschriftung_nachricht') ?>" name="message_text"><?php if($_SERVER['REQUEST_METHOD'] == 'POST') {echo esc_textarea($_POST['message_text']);} ?></textarea>
             </div>
           </div>
           <div class="form-group">
