@@ -10,7 +10,7 @@
         <div class="col-md-10 col-md-offset-1 text-center">
           <blockquote>
             <q><?= get_sub_field('quote') ?></q>
-            <?php if (get_sub_field('source') != "") { ?>
+            <?php if (get_sub_field('source')) { ?>
               <footer><?= get_sub_field('source') ?></footer>
             <?php } ?>
           </blockquote>

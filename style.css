@@ -142,7 +142,7 @@ h2 {
 .content-slide-intro, .content-slide-intro * {
   font-size: 30px;
 }
-blockquote q {
+blockquote q, blockquote q *, blockquote q p, blockquote q p * {
   font-size: 40px;
 }
 .nav li a {
@@ -184,7 +184,10 @@ blockquote q {
   .content-slide-intro {
     font-size: 27px;
   }
-  blockquote q {
+  blockquote q,
+  blockquote q *,
+  blockquote q p,
+  blockquote q p * {
     font-size: 27px;
   }
   .panel-heading h4 {
@@ -334,7 +337,7 @@ blockquote q {
 .quote-slide blockquote {
   border: none;
 }
-.quote-slide blockquote q {
+.quote-slide blockquote q, .quote-slide blockquote q *, .quote-slide blockquote q p, .quote-slide blockquote q p * {
   color: #000;
 }
 .quote-slide blockquote footer {
