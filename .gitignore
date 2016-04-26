@@ -20,3 +20,5 @@ wp-content/plugins/hello.php
 bower_components/bootstrap/node_modules
 bower_components/bootstrap/node_modules/*
 bower_components/bootstrap/node_modules/**
+
+acf.php
