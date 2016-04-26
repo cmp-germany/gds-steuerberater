@@ -15,7 +15,7 @@ wp-content/plugins/hello.php
 
 /readme.html
 /license.txt
-acf.php
+./acf.php
 
 bower_components/bootstrap/node_modules
 bower_components/bootstrap/node_modules/*
