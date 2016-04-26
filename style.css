@@ -95,11 +95,14 @@ q {
   font-family: 'Arapey', serif;
   font-style: italic;
 }
-q:before {
+q p:first-child::before {
   content: '„';
 }
-q:after {
+q p:last-child::after {
   content: '“';
+}
+q::before, q::after {
+  content: none;
 }
 
 /*///////// Typography Sizes*/
