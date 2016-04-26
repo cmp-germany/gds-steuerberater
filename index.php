@@ -2,6 +2,7 @@
   include_once 'emails.php';
   $accordion_nr = 0;
   $collapse_nr  = 0;
+  $modal_nr     = 0;
 ?>
 
 <?php get_header(); ?>

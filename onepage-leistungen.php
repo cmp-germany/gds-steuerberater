@@ -1,4 +1,4 @@
-<?php global $accordion_nr, $collapse_nr; ?>
+<?php global $accordion_nr, $collapse_nr; $modal_nr; ?>
 <section
   <?php if (get_sub_field('in_navigation_sichtbar')){
     echo "id=\"".get_sub_field('navigation_link'). "\"";
@@ -48,7 +48,22 @@
                     <div class="panel-body">
                       <ul>
                         <?php while ( have_rows('activity') ) : the_row(); ?>
-                        <li><a data-toggle="popover" data-placement="top" title="<?= get_sub_field('name')?>" data-content="<?= get_sub_field('beschreibung') ?>"><?= get_sub_field('name') ?></a></li>
+                          <li>
+                            <a href="#" data-toggle="modal" data-target="#leistungenModal<?= ++$modal_nr ?>"><?= get_sub_field('name') ?></a>
+                            <div class="modal fade" id="leistungenModal<?= $modal_nr ?>" tabindex="-1" role="dialog" aria-labelledby="#leistungenModal<?= $modal_nr ?>Label">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="leistungenModal<?= $modal_nr ?>Label"><?= get_sub_field('name')?></h4>
+                                  </div>
+                                  <div class="modal-body hyphenate">
+                                    <?= get_sub_field('beschreibung') ?>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
                         <?php endwhile; ?>
                       </ul>
                     </div>
@@ -77,7 +92,22 @@
                     <div class="panel-body">
                       <ul>
                         <?php while ( have_rows('activity') ) : the_row(); ?>
-                        <li><a data-toggle="popover" data-placement="top" title="<?= get_sub_field('name')?>" data-content="<?= get_sub_field('beschreibung') ?>"><?= get_sub_field('name') ?></a></li>
+                          <li>
+                            <a href="#" data-toggle="modal" data-target="#leistungenModal<?= ++$modal_nr ?>"><?= get_sub_field('name') ?></a>
+                            <div class="modal fade" id="leistungenModal<?= $modal_nr ?>" tabindex="-1" role="dialog" aria-labelledby="#leistungenModal<?= $modal_nr ?>Label">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="leistungenModal<?= $modal_nr ?>Label"><?= get_sub_field('name')?></h4>
+                                  </div>
+                                  <div class="modal-body hyphenate">
+                                    <?= get_sub_field('beschreibung') ?>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
                         <?php endwhile; ?>
                       </ul>
                     </div>

@@ -24,7 +24,6 @@ function enqueue_css_js() {
   wp_enqueue_script('jquery-easing-min-js',  $root . '/js/jquery.easing.min.js', array('jquery'));
   wp_enqueue_script('scrolling-nav-js',  $root . '/js/scrolling-nav.js', array('jquery', 'jquery-easing-min-js'));
   wp_enqueue_script('scrollspy-js',  $root . '/js/scrollspy.js', array('jquery', 'scrolling-nav-js'));
-  wp_enqueue_script('popover-js',  $root . '/js/popover.js', array('jquery'));
 	wp_enqueue_script('hyphenator-js', $root . '/js/Hyphenator.js');
 	wp_enqueue_script('hyphenator-loader-js', $root . '/js/Hyphenator_Loader.js', array('hyphenator-js'));
 	wp_enqueue_script('hyphenate-js', $root . '/js/hyphenate.js', array('hyphenator-js', 'hyphenator-loader-js', 'jquery'));
@@ -33,7 +32,7 @@ function enqueue_css_js() {
   wp_enqueue_style('bootstrap-css', $bootstrap_dir . '/css/bootstrap.min.css');
   wp_enqueue_style('style-css', $root . '/style.css');
 	wp_enqueue_style('animation-css', $root . '/css/animation.css');
-	wp_enqueue_style('popover-css', $root . '/css/popover.css');
+	wp_enqueue_style('modal-css', $root . '/css/modal.css');
 
   wp_enqueue_style('lato-font', 'https://fonts.googleapis.com/css?family=Lato:400,700,900');
   wp_enqueue_style('arapey-font', 'https://fonts.googleapis.com/css?family=Arapey:400italic');

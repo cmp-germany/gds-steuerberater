@@ -1,0 +1,11 @@
+.modal-content {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.modal-title {
+  font-family: 'Arapey', serif;
+  font-style: italic;
+  font-size: 150%;
+}

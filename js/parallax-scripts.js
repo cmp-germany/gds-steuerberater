@@ -5,6 +5,7 @@ $(document).ready(function() {
   setBackgroundImages();
   onResizeTitleSlide();
   onResizeTitleSlideCenter();
+  modalOnLink();
 
 
   // event listeners
@@ -34,4 +35,12 @@ function setBackgroundImages() {
     var backgroundSrc = $(this).data('imageSrc');
     $(this).css('background-image', 'url('+backgroundSrc+')');
   });
+}
+
+function modalOnLink() {
+  // $('a[data-toggle="modal"]').click(function(){
+  //   selector = $(this).data('target');
+  //   //console.log($(selector));
+  //   $(selector).modal('show');
+  // });
 }
