@@ -27,6 +27,7 @@ function enqueue_css_js() {
 	wp_enqueue_script('hyphenator-js', $root . '/js/Hyphenator.js');
 	wp_enqueue_script('hyphenator-loader-js', $root . '/js/Hyphenator_Loader.js', array('hyphenator-js'));
 	wp_enqueue_script('hyphenate-js', $root . '/js/hyphenate.js', array('hyphenator-js', 'hyphenator-loader-js', 'jquery'));
+	wp_enqueue_script('nav-js', $root . '/js/nav.js', array('jquery'));
 
 
   wp_enqueue_style('bootstrap-css', $bootstrap_dir . '/css/bootstrap.min.css');
