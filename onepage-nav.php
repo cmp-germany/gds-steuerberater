@@ -16,7 +16,7 @@
       <?php } ?>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" aria-expanded="false">
       <div class="navbar-left">
         <?php
           $logos = get_field('navigation_additional_logos');

@@ -11,6 +11,7 @@
 
 <?php get_template_part('onepage', 'nav'); ?>
 
+<div class="content-wrapper">
 <?php
   if( have_rows('onepage_elemente') ):
     while ( have_rows('onepage_elemente') ) : the_row();
@@ -20,6 +21,7 @@
       // no layouts found
   endif;
 ?>
+</div>
 
 <?php endwhile; // end of the loop. ?>
 <?php get_footer(); ?>
