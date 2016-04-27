@@ -15,6 +15,11 @@ blockquote {
   border: none;
 }
 
+/* No Scrollbar on horizontal */
+html, body {
+  overflow-x: hidden;
+}
+
 /*///////// Navbar Styling */
 
 .navbar {
