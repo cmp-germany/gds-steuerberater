@@ -7,6 +7,10 @@ $(document).ready(function() {
   $(window).resize(function() {
     hideElementsOnWidth();
   });
+
+  $('.nav a').on('click', function(){
+    $('.navbar-toggle').click();
+  });
 });
 
 function showNavbar() {
