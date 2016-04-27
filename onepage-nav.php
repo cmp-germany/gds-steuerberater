@@ -22,7 +22,7 @@
           $logos = get_field('navigation_additional_logos');
           if ($logos) {
             foreach ($logos as $logo) {
-              ?><img src="<?= $logo['bild']['url'] ?>" alt="<?= $logo['bild']['alt'] ?>" class="menu-bar-icon menu-bar-icon-hidable" <?php if ($logo['hide_width']): ?>data-hide-width="<?= $logo['hide_width'] ?>"<?php endif; ?>/><?php
+              ?><img src="<?= $logo['bild']['url'] ?>" alt="<?= $logo['bild']['alt'] ?>" class="menu-bar-icon" <?php if ($logo['hide_width']): ?>data-hide-width="<?= $logo['hide_width'] ?>"<?php endif; ?>/><?php
             }
           }
         ?>
