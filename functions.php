@@ -24,7 +24,7 @@ function enqueue_css_js() {
   wp_enqueue_script('jquery-easing-min-js',  $root . '/js/jquery.easing.min.js', array('jquery'));
   wp_enqueue_script('scrolling-nav-js',  $root . '/js/scrolling-nav.js', array('jquery', 'jquery-easing-min-js'));
   wp_enqueue_script('scrollspy-js',  $root . '/js/scrollspy.js', array('jquery', 'scrolling-nav-js'));
-	wp_enqueue_script('hyphenate-js', $root . '/js/hyphenate.js', array('hyphenator-js', 'hyphenator-loader-js', 'jquery'));
+	wp_enqueue_script('hyphenate-js', $root . '/js/hyphenate.js', array('jquery'));
 	wp_enqueue_script('nav-js', $root . '/js/nav.js', array('jquery'));
 
 
