@@ -23,11 +23,11 @@ $(document).ready(function() {
       location.hash = "";
     } else {
       var hash = $(e.target).find('a').attr('href');
-      console.log(hash);
-      var tempId = $(hash).attr('id');
-      $(hash).attr('id', '');
+      var element = $(hash);
+      var tempId = element.attr('id');
+      element.attr('id', '');
       location.hash = hash;
-      $(hash).attr('id', tempId);
+      element.attr('id', tempId);
     }
   });
 });
