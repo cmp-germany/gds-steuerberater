@@ -22,7 +22,7 @@
           $logos = get_field('navigation_additional_logos');
           if ($logos) {
             foreach ($logos as $logo) {
-              ?><img src="<?= $logo['bild']['url'] ?>" alt="<?= $logo['bild']['alt'] ?>" class="menu-bar-icon menu-bar-icon-hidable"/><?php
+              ?><img src="<?= $logo['bild']['url'] ?>" alt="<?= $logo['bild']['alt'] ?>" class="menu-bar-icon menu-bar-icon-hidable" <?php if ($logo['hide_width']): ?>data-hide-width="<?= $logo['hide_width'] ?>"<?php endif; ?>/><?php
             }
           }
         ?>
@@ -34,9 +34,9 @@
         if ($links) {
           foreach ($links as $link) {
             if ($link['acf_fc_layout'] == 'logo') {
-              ?><li class="nav-image-link"><a href="<?= $link['url'] ?>" target="_blank"><img src="<?= $link['bild']['url'] ?>" alt="<?= $link['bild']['alt'] ?>" class="menu-bar-icon"/></a></li><?php
+              ?><li class="nav-image-link" <?php if ($link['hide_width']): ?>data-hide-width="<?= $link['hide_width']?>"<?php endif; ?>><a href="<?= $link['url'] ?>" target="_blank"><img src="<?= $link['bild']['url'] ?>" alt="<?= $link['bild']['alt'] ?>" class="menu-bar-icon"/></a></li><?php
             } elseif ($link['acf_fc_layout'] == 'text') {
-              ?><li><a href="<?= $link['url'] ?>" target="_blank"><?= $link['beschriftung'] ?></a></li><?php
+              ?><li <?php if ($link['hide_width']): ?>data-hide-width="<?= $link['hide_width']?>"<?php endif; ?>><a href="<?= $link['url'] ?>" target="_blank"><?= $link['beschriftung'] ?></a></li><?php
             }
           }
         }
