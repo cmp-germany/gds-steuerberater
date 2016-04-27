@@ -337,6 +337,14 @@ blockquote q, blockquote q *, blockquote q p, blockquote q p * {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
 }
+
+@media (max-width: 740px) {
+  .quote-slide .quotation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 .quote-slide blockquote {
   border: none;
 }
