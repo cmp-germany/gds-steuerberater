@@ -7,9 +7,14 @@ $(document).ready(function() {
   onResizeTitleSlideCenter();
   modalOnLink();
 
+  $('.parallax-slide[data-image][data-speed="0"]').each(function(){
+    if ($(window).width() < 740) {
+      $(this).height($(window).height()-100);
+    }
+  });
 
   // event listeners
-  $(window).resize(onResizeTitleSlide);
+  // $(window).resize(onResizeTitleSlide);
   $(window).resize(onResizeTitleSlideCenter);
   $(window).resize(setBackgroundImages);
 });
@@ -45,9 +50,6 @@ function setBackgroundImages() {
       height: $(window).height(),
       width: $(window).width()
     });
-    if ($(window).width() < 740) {
-      $(this).height($(window).height()-100);
-    }
   });
 }
 
