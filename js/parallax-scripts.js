@@ -7,7 +7,7 @@ $(document).ready(function() {
   onResizeTitleSlideCenter();
   modalOnLink();
 
-  $('.parallax-slide[data-image][data-speed="0"]').each(function(){
+  $('.quote-slide[data-image]').each(function(){
     if ($(window).width() < 740) {
       $(this).height($(window).height()-100);
     }
