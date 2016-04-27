@@ -46,8 +46,8 @@ blockquote {
 .nav > li > a:focus, .nav > li > a:hover, .nav > li.active > a {
   background-color: inherit;
   color: #000;
-  border-bottom: solid #000 1px;
-  margin-bottom: -1px;
+  /*border-bottom: solid #000 1px;
+  margin-bottom: -1px;*/
 }
 .nav li a {
   color: #999;
