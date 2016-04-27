@@ -23,7 +23,11 @@ $(document).ready(function() {
       location.hash = "";
     } else {
       var hash = $(e.target).find('a').attr('href');
+      console.log(hash);
+      var tempId = $(hash).attr('id');
+      $(hash).attr('id', '');
       location.hash = hash;
+      $(hash).attr('id', tempId);
     }
   });
 });
