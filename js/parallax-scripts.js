@@ -45,6 +45,9 @@ function setBackgroundImages() {
       height: $(window).height(),
       width: $(window).width()
     });
+    if ($(window).height() < 900) {
+      $(this).height($(window).height());
+    }
   });
 }
 
