@@ -2,7 +2,7 @@
   <?php if (get_sub_field('in_navigation_sichtbar')){
     echo "id=\"".get_sub_field('navigation_link'). "\"";
   }; ?>
-  class="title-slide parallax-slide" data-parallax="scroll" data-image-src="<?php $hintergrund_bild = get_sub_field('hintergrund_bild'); echo $hintergrund_bild['url']; ?>" data-speed="0">
+  class="title-slide parallax-slide" data-parallax="scroll" <?php if (get_sub_field('hintergrund_bild')): ?>data-image="<?php echo htmlentities(json_encode(get_sub_field('hintergrund_bild')), ENT_QUOTES, 'UTF-8'); ?>" <?php endif; ?>data-speed="0">
   <div class="title-slide-center">
     <div class="container">
       <div class="row">
