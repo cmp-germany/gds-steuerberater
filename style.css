@@ -470,6 +470,13 @@ blockquote q, blockquote q *, blockquote q p, blockquote q p * {
   background-color: #e6f1fc;
 }
 
+@media (max-width: 765px) {
+  .kontakt-slide form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .kontakt-slide input, .kontakt-slide textarea, .kontakt-slide form button {
   border: 0;
 }
