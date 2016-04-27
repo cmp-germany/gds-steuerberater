@@ -343,6 +343,15 @@ blockquote q, blockquote q *, blockquote q p, blockquote q p * {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .quote-slide blockquote {
+    padding: 0;
+    margin: 0;
+  }
+
+  .quote-slide .row {
+    margin-bottom: 0;
+  }
 }
 
 .quote-slide blockquote {
