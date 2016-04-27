@@ -31,9 +31,33 @@ function onResizeTitleSlideCenter() {
 }
 
 function setBackgroundImages() {
-  $('.parallax-slide[data-image-src]').each(function() {
-    var backgroundSrc = $(this).data('imageSrc');
-    $(this).css('background-image', 'url('+backgroundSrc+')');
+  $('.parallax-slide[data-image]').each(function() {
+    var backgroundImageData = $(this).data('image');
+
+    if (!backgroundImageData.sizes)
+      return;
+
+    oldSizes = backgroundImageData.sizes;
+
+    // Objekte aus den einzelnen Sizes bauen
+    var sizes = {};
+    for (var key in oldSizes) {
+      if (oldSizes.hasOwnProperty(key)) {
+        var index = key.indexOf('-');
+        if (index == -1) {
+          sizes[key] = {url: oldSizes[key]};
+        } else {
+          newKeyArray = key.split('-');
+          newKey = newKeyArray[0];
+          newSubKey = newKeyArray[1];
+          sizes[newKey][newSubKey] = oldSizes[key];
+        }
+      }
+    }
+    
+    console.log(sizes);
+
+    // $(this).css('background-image', 'url('+backgroundSrc+')');
   });
 }
 
