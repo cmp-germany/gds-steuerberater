@@ -2,11 +2,18 @@ $ = jQuery.noConflict();
 
 $(document).ready(function() {
   hideElementsOnWidth();
+  showNavbar();
 
   $(window).resize(function() {
     hideElementsOnWidth();
   });
 });
+
+function showNavbar() {
+  if (!$('ul.navbar-nav li.active').hasClass('hidden')) {
+    $('.navbar-fixed-top').show();
+  }
+}
 
 function hideElementsOnWidth() {
   $('[data-hide-width]').each(function() {
