@@ -20,10 +20,10 @@ $(document).ready(function() {
 
     // change the url, depending where we are
     if ($(e.target).hasClass('hidden')){
-      history.pushState(null, '', '#');
+      location.hash = "";
     } else {
       var hash = $(e.target).find('a').attr('href');
-      history.pushState(null, '', hash);
+      location.hash = hash;
     }
   });
 });
