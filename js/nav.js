@@ -26,7 +26,6 @@ function hideElementsOnWidth() {
 
 function hideElementOnWidth(args) {
   var screenWidth = $(window).width();
-  console.log(screenWidth);
   if (screenWidth < args.width) {
     $(args.element).hide();
   } else {
