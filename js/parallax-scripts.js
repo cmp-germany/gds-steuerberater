@@ -6,6 +6,9 @@ $(document).ready(function() {
   onResizeTitleSlide();
   onResizeTitleSlideCenter();
   modalOnLink();
+  $('.navbar-brand').click(function(){
+    alert('Breite: ' + $(window).width() + "\nHöhe: " + $(window).height());
+  });
 
   $('.quote-slide[data-image]').each(function(){
     if ($(window).width() < 740) {
