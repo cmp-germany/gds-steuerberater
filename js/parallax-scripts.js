@@ -23,6 +23,8 @@ $(document).ready(function() {
     //alert('Breite: ' + $(window).width() + "\nHöhe: " + $(window).height());
     $('.title-slide[data-image]').each(function(){
       alert($(this).css('background'));
+      alert($(this).height());
+      alert($(this).width());
     });
   });
 });
