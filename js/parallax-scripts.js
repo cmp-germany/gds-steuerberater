@@ -6,6 +6,7 @@ $(document).ready(function() {
   onResizeTitleSlide();
   onResizeTitleSlideCenter();
   modalOnLink();
+  fixIOS();
 
   $('.quote-slide[data-image]').each(function(){
     if ($(window).width() < 740) {
@@ -18,16 +19,13 @@ $(document).ready(function() {
   $(window).resize(onResizeTitleSlideCenter);
   $(window).resize(setBackgroundImages);
 
-  // Debugging Stuff
-  $('.navbar-brand').click(function(){
-    //alert('Breite: ' + $(window).width() + "\nHöhe: " + $(window).height());
-    $('.title-slide[data-image]').each(function(){
-      alert($(this).css('background'));
-      alert($(this).height());
-      alert($(this).width());
-    });
-  });
 });
+
+function fixIOS() {
+  if (iOS()){
+    $('.parallax-slide[data-image][data-speed="0"]').css('background-attachment', 'scroll');
+  }
+}
 
 function testEvent(e) {
   console.log(e);
@@ -131,4 +129,24 @@ function setBackground(args) {
   //   "Breite: " + args.width + "\n" +
   //   "Bild:" + JSON.stringify(fittingPicture)
   // );
+}
+
+function iOS() {
+
+  var iDevices = [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ];
+
+  if (!!navigator.platform) {
+    while (iDevices.length) {
+      if (navigator.platform === iDevices.pop()){ return true; }
+    }
+  }
+
+  return false;
 }
