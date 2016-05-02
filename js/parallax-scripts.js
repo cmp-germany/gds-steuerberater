@@ -54,13 +54,13 @@ function setBackgroundImages() {
       width: $(this).outerWidth()
     });
   });
-  // $('.parallax-slide[data-image][data-speed="0"]').each(function(){
-  //   setBackground({
-  //     element: this,
-  //     height: $(window).height(),
-  //     width: $(window).width()
-  //   });
-  // });
+  $('.parallax-slide[data-image][data-speed="0"]').each(function(){
+    setBackground({
+      element: this,
+      height: $(window).height(),
+      width: $(window).width()
+    });
+  });
 }
 
 function modalOnLink() {
