@@ -5,7 +5,6 @@ $(document).ready(function() {
   setBackgroundImages();
   onResizeTitleSlide();
   onResizeTitleSlideCenter();
-  modalOnLink();
   fixIOS();
 
   $('.quote-slide[data-image]').each(function(){
@@ -13,9 +12,6 @@ $(document).ready(function() {
       $(this).height($(window).height()-100);
     }
   });
-
-  // event listeners
-  // $(window).resize(onResizeTitleSlide);
   $(window).resize(onResizeTitleSlideCenter);
   $(window).resize(setBackgroundImages);
 
@@ -59,14 +55,6 @@ function setBackgroundImages() {
       width: $(window).width()
     });
   });
-}
-
-function modalOnLink() {
-  // $('a[data-toggle="modal"]').click(function(){
-  //   selector = $(this).data('target');
-  //   //console.log($(selector));
-  //   $(selector).modal('show');
-  // });
 }
 
 function setBackground(args) {
@@ -122,13 +110,6 @@ function setBackground(args) {
 
   // Bild als Hintergrund definieren
   $(args.element).css('background-image', 'url('+fittingPicture.url+')');
-
-  // Debugging Stuff
-  // alert(
-  //   "Höhe:" + args.height + "\n" +
-  //   "Breite: " + args.width + "\n" +
-  //   "Bild:" + JSON.stringify(fittingPicture)
-  // );
 }
 
 function iOS() {
