@@ -20,7 +20,10 @@ $(document).ready(function() {
 
   // Debugging Stuff
   $('.navbar-brand').click(function(){
-    alert('Breite: ' + $(window).width() + "\nHöhe: " + $(window).height());
+    //alert('Breite: ' + $(window).width() + "\nHöhe: " + $(window).height());
+    $('.title-slide[data-image]').each(function(){
+      alert($(this).css('background'));
+    });
   });
 });
 
@@ -121,9 +124,9 @@ function setBackground(args) {
   $(args.element).css('background-image', 'url('+fittingPicture.url+')');
 
   // Debugging Stuff
-  alert(
-    "Höhe:" + args.height + "\n" +
-    "Breite: " + args.width + "\n" +
-    "Bild:" + JSON.stringify(fittingPicture)
-  );
+  // alert(
+  //   "Höhe:" + args.height + "\n" +
+  //   "Breite: " + args.width + "\n" +
+  //   "Bild:" + JSON.stringify(fittingPicture)
+  // );
 }
