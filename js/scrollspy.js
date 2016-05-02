@@ -19,15 +19,18 @@ $(document).ready(function() {
     }
 
     // change the url, depending where we are
+    var hash, element, tempId;
+
     if ($(e.target).hasClass('hidden')){
-      location.hash = "";
+      hash = '#page-top';
     } else {
-      var hash = $(e.target).find('a').attr('href');
-      var element = $(hash);
-      var tempId = element.attr('id');
-      element.attr('id', '');
-      location.hash = hash;
-      element.attr('id', tempId);
+      hash = $(e.target).find('a').attr('href');
     }
+
+    element = $(hash);
+    tempId = element.attr('id');
+    element.attr('id', '');
+    location.hash = hash;
+    element.attr('id', tempId);
   });
 });
