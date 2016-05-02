@@ -6,9 +6,6 @@ $(document).ready(function() {
   onResizeTitleSlide();
   onResizeTitleSlideCenter();
   modalOnLink();
-  $('.navbar-brand').click(function(){
-    alert('Breite: ' + $(window).width() + "\nHöhe: " + $(window).height());
-  });
 
   $('.quote-slide[data-image]').each(function(){
     if ($(window).width() < 740) {
@@ -20,6 +17,11 @@ $(document).ready(function() {
   // $(window).resize(onResizeTitleSlide);
   $(window).resize(onResizeTitleSlideCenter);
   $(window).resize(setBackgroundImages);
+
+  // Debugging Stuff
+  $('.navbar-brand').click(function(){
+    alert('Breite: ' + $(window).width() + "\nHöhe: " + $(window).height());
+  });
 });
 
 function testEvent(e) {
@@ -117,4 +119,11 @@ function setBackground(args) {
 
   // Bild als Hintergrund definieren
   $(args.element).css('background-image', 'url('+fittingPicture.url+')');
+
+  // Debugging Stuff
+  alert(
+    "Höhe:" + args.height + "\n" +
+    "Breite: " + args.width + "\n" +
+    "Bild:" + JSON.stringify(fittingPicture)
+  );
 }
