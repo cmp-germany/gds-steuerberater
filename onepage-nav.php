@@ -52,6 +52,16 @@
             }
           endwhile;
         ?>
+        <?php
+          $locations = get_nav_menu_locations();
+          $menuId = $locations['nav-menu'];
+          $menuItems = wp_get_nav_menu_items($menuId);
+          if ($menuItems) {
+            foreach ($menuItems as $menuItem) { ?>
+              <li><a href="<?= $menuItem->url ?>"><?= $menuItem->title ?></a></li>
+            <?php }
+          }
+        ?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

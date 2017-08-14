@@ -50,3 +50,9 @@ function endcore_remove_menu_pages() {
   // remove_menu_page('edit.php?post_type=page'); // Entfernt den Punkt Seiten
   remove_menu_page('edit-comments.php'); // Entfernt den Punkt Kommentare
 }
+
+// Navi Menü im Theme registrieren
+function register_navi_menu() {
+  register_nav_menu('nav-menu',__( 'Nav Menu' ));
+}
+add_action( 'init', 'register_navi_menu' );
